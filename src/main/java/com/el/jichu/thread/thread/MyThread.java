@@ -5,15 +5,17 @@ public class MyThread extends Thread {
         super(name);
     }
 
-    private int i=0;
-    public  void run(){
-        for (i=0;i<30;i++){
-            System.out.println(Thread.currentThread().getName()+"    "+i);
+    private int i = 0;
+
+    public void run() {
+        for (i = 0; i < 30; i++) {
+            System.out.println(Thread.currentThread().getName() + "    " + i);
         }
     }
-    public static void main(String[] args){
-        for (int i=0;i<2;i++){
-            System.out.println(Thread.currentThread().getName()+"  "+i);
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 2; i++) {
+            System.out.println(Thread.currentThread().getName() + "  " + i);
             MyThread thread1 = new MyThread("Thtrea-A");
 
             MyThread thread2 = new MyThread("Thtrea-B");

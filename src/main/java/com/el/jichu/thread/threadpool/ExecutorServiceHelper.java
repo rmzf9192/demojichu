@@ -10,25 +10,26 @@ public class ExecutorServiceHelper {
     /**
      * 获取活跃的CPU的数量
      */
-    private static  int NUMBER_OF_CORES=Runtime.getRuntime().availableProcessors();
+    private static int NUMBER_OF_CORES = Runtime.getRuntime().availableProcessors();
     private static final BlockingQueue<Runnable> mWorkQueue;
-    private static final long KEEP_ALIVE_TIME=60L;
-    private static  final TimeUnit KEEP_ALIVE_TIME_UTIL= TimeUnit.SECONDS;
+    private static final long KEEP_ALIVE_TIME = 60L;
+    private static final TimeUnit KEEP_ALIVE_TIME_UTIL = TimeUnit.SECONDS;
     private static final ThreadFactory mThreadFactory;
 
     static {
         //mWorkQueue=new LinkedBlockingQueue<>();
-        mWorkQueue=new ArrayBlockingQueue<>(3);
+        mWorkQueue = new ArrayBlockingQueue<>(3);
         //默认的工厂方法将新创建的线程命名为：pool-[虚拟机中线程池编号]-thread-[线程编号]
         //threadFactory = Executors.defaultThreadFactory();
         mThreadFactory = new NamedThreadFactory();
-        System.out.println("NUMBER_OF_CORES:"+NUMBER_OF_CORES);
-        System.out.println("KEEP_ALIVE_TIME:"+KEEP_ALIVE_TIME);
-        System.out.println("KEEP_ALIVE_TIME_UTIL:"+KEEP_ALIVE_TIME_UTIL);
+        System.out.println("NUMBER_OF_CORES:" + NUMBER_OF_CORES);
+        System.out.println("KEEP_ALIVE_TIME:" + KEEP_ALIVE_TIME);
+        System.out.println("KEEP_ALIVE_TIME_UTIL:" + KEEP_ALIVE_TIME_UTIL);
 
     }
-    public static void execute(Runnable runnable){
-        if(runnable==null) return;
+
+    public static void execute(Runnable runnable) {
+        if (runnable == null) return;
 
         /**
          * 1.线程池小于corePoolSize时，新提交任务将创建一个新的线程执行任务，即使此时线程池中存在空闲线程
@@ -47,11 +48,12 @@ public class ExecutorServiceHelper {
         executorService.execute(runnable);
     }
 
-    private static class NamedThreadFactory implements ThreadFactory{
-       private final AtomicInteger threadNumberAtomicInteger=new AtomicInteger(1);
+    private static class NamedThreadFactory implements ThreadFactory {
+        private final AtomicInteger threadNumberAtomicInteger = new AtomicInteger(1);
+
         @Override
         public Thread newThread(Runnable r) {
-           Thread thread= new Thread(r,String.format(Locale.CHINA,"%s%d","NamedThreadFactory",threadNumberAtomicInteger.getAndIncrement()));
+            Thread thread = new Thread(r, String.format(Locale.CHINA, "%s%d", "NamedThreadFactory", threadNumberAtomicInteger.getAndIncrement()));
            /* thread.setDaemon(true);//是否是守护线程
             thread.setPriority(Thread.NORM_PRIORITY);//设置优先级 1~10 有3个常量 默认 Thread.MIN_PRIORITY*/
             return thread;

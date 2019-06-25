@@ -11,10 +11,10 @@ import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 public class JoinTest {
 
     public static void main(String[] args) throws InterruptedException, IOException {
-        System.out.println(Thread.currentThread().getName()+"-》正在运行");
+        System.out.println(Thread.currentThread().getName() + "-》正在运行");
         //countDownLatch();
         join();
-        System.out.println(Thread.currentThread().getName()+"：获取当前主线程线程状态："+Thread.currentThread().getState());
+        System.out.println(Thread.currentThread().getName() + "：获取当前主线程线程状态：" + Thread.currentThread().getState());
         // cyclicBarrier();
        /* Thread thread = new Thread(new StopThread(), "Thread-A");
 
@@ -24,7 +24,7 @@ public class JoinTest {
         TimeUnit.MICROSECONDS.sleep(10);
         thread.interrupt();*/
 
-       // executorService();
+        // executorService();
 
         //piped();
     }
@@ -40,7 +40,7 @@ public class JoinTest {
                     e.printStackTrace();
                 }
             }
-        }) ;
+        });
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -51,7 +51,7 @@ public class JoinTest {
                     e.printStackTrace();
                 }
             }
-        }) ;
+        });
 
         t1.start();
         t2.start();
@@ -60,17 +60,17 @@ public class JoinTest {
         t1.join();
         //等待线程2终止
         t2.join();
-        System.out.println(Thread.currentThread().getName()+":获取当前子线程状态："+Thread.currentThread().getState());
+        System.out.println(Thread.currentThread().getName() + ":获取当前子线程状态：" + Thread.currentThread().getState());
         LOGGER.info("main over");
 
     }
 
     public static void countDownLatch() throws InterruptedException {
-        int thread=3;
-        long start=System.currentTimeMillis();
+        int thread = 3;
+        long start = System.currentTimeMillis();
         final CountDownLatch countDownLatch = new CountDownLatch(thread);
 
-        for(int i=0;i<thread;i++){
+        for (int i = 0; i < thread; i++) {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -86,19 +86,19 @@ public class JoinTest {
         }
         countDownLatch.await();
 
-        long end=System.currentTimeMillis();
+        long end = System.currentTimeMillis();
 
 
-      LOGGER.info("main over total time={}："+(end-start));
+        LOGGER.info("main over total time={}：" + (end - start));
     }
 
-    private static void cyclicBarrier(){
+    private static void cyclicBarrier() {
         CyclicBarrier cyclicBarrier = new CyclicBarrier(3);
 
         new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName()+"Thread Runing");
+                LOGGER.info(Thread.currentThread().getName() + "Thread Runing");
                 try {
                     cyclicBarrier.await();
                 } catch (InterruptedException e) {
@@ -113,7 +113,7 @@ public class JoinTest {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName()+"Thread Running");
+                LOGGER.info(Thread.currentThread().getName() + "Thread Running");
                 try {
                     cyclicBarrier.await();
                 } catch (InterruptedException e) {
@@ -128,7 +128,7 @@ public class JoinTest {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName()+"Thread Running");
+                LOGGER.info(Thread.currentThread().getName() + "Thread Running");
                 try {
                     cyclicBarrier.await();
                 } catch (InterruptedException e) {
@@ -147,16 +147,16 @@ public class JoinTest {
     /**
      * 线程中断通信
      */
-    public static class StopThread implements Runnable{
+    public static class StopThread implements Runnable {
 
         @Override
         public void run() {
-            while(!Thread.currentThread().isInterrupted()){
+            while (!Thread.currentThread().isInterrupted()) {
                 //线程执行具体的逻辑
-                System.out.println(Thread.currentThread().getName()+"线程正在运行");
+                System.out.println(Thread.currentThread().getName() + "线程正在运行");
 
             }
-            System.out.println(Thread.currentThread().getName()+"退出");
+            System.out.println(Thread.currentThread().getName() + "退出");
         }
     }
 
@@ -171,7 +171,7 @@ public class JoinTest {
         poolExecutor.execute(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName()+"-runing");
+                LOGGER.info(Thread.currentThread().getName() + "-runing");
                 try {
                     Thread.sleep(3000);
                 } catch (InterruptedException e) {
@@ -183,7 +183,7 @@ public class JoinTest {
         poolExecutor.execute(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName()+"-runing");
+                LOGGER.info(Thread.currentThread().getName() + "-runing");
 
                 try {
                     Thread.sleep(2000);
@@ -193,7 +193,7 @@ public class JoinTest {
             }
         });
         poolExecutor.shutdown();
-        while(!poolExecutor.awaitTermination(1,TimeUnit.SECONDS)){
+        while (!poolExecutor.awaitTermination(1, TimeUnit.SECONDS)) {
             LOGGER.info("线程还在执行");
         }
 

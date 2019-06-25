@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class DieLockTest {
 
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         Car car = new Car();
         ExecutorService executorService = Executors.newCachedThreadPool();
         executorService.execute(new Buffed(car));

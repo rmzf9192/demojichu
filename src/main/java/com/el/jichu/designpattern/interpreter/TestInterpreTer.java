@@ -4,9 +4,7 @@ package com.el.jichu.designpattern.interpreter;
  * @Auther: roman.zhang
  * @Date: 2019/1/3 17:30
  * @Version:V1.0
- * @Description:TestInterpreTer
- *
- * 基本就这样，解释器模式用来做各种各样的解释器，如正则表达式等的解释器等等
+ * @Description:TestInterpreTer 基本就这样，解释器模式用来做各种各样的解释器，如正则表达式等的解释器等等
  */
 public class TestInterpreTer {
 

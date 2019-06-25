@@ -10,7 +10,7 @@ import java.util.Vector;
  * @Description:AbstractSubject
  */
 public abstract class AbstractSubject implements Subject {
-    private Vector<Observer> observers=new Vector<>();
+    private Vector<Observer> observers = new Vector<>();
 
     @Override
     public void add(Observer observer) {
@@ -25,7 +25,7 @@ public abstract class AbstractSubject implements Subject {
     @Override
     public void notifyObservers() {
         Enumeration<Observer> elements = observers.elements();
-        while (elements.hasMoreElements()){
+        while (elements.hasMoreElements()) {
             elements.nextElement().update();
         }
     }

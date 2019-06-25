@@ -17,8 +17,8 @@ public class MyHandler extends AbstractHandler implements Handler {
 
     @Override
     public void operator() {
-        System.out.println(name+":deal");
-        if(getHandler()!=null){
+        System.out.println(name + ":deal");
+        if (getHandler() != null) {
             getHandler().operator();
         }
     }

@@ -18,7 +18,7 @@ public class MyThreadPool {
                 60, // 60s
                 TimeUnit.SECONDS, new ArrayBlockingQueue<>(3) // 有界队列，容量是3个
         );
-        for(int i=0;i<5;i++){
+        for (int i = 0; i < 5; i++) {
             MyTask task1 = new MyTask(i, "task1");
             pool.execute(task1);
         }

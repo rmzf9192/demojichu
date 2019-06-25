@@ -6,6 +6,10 @@ import com.el.jichu.domain.Employee;
 public class FilterEmployeeForAge implements MyPredicate<Employee> {
     @Override
     public boolean test(Employee employee) {
-        return employee.getAge()<35;
+        return employee.getAge() < 35;
+    }
+
+    public static void test1(){
+        System.out.println("jjjjjj");
     }
 }

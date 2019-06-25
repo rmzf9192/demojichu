@@ -4,7 +4,7 @@ public class Singleton {
 
     private static volatile Singleton singleton;
 
-    private static volatile  boolean flag;
+    private static volatile boolean flag;
 
     public Singleton() {
     }
@@ -20,10 +20,10 @@ public class Singleton {
         return singleton;
     }
 
-    private void run(){
-        new Thread(new Runnable(){
-            public void run(){
-                while(flag){
+    private void run() {
+        new Thread(new Runnable() {
+            public void run() {
+                while (flag) {
                     doSomeString();
                 }
             }
@@ -33,8 +33,8 @@ public class Singleton {
         });
     }
 
-    private void stop(){
-        flag=false;
+    private void stop() {
+        flag = false;
     }
 
 

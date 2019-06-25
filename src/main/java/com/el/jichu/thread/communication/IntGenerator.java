@@ -5,15 +5,16 @@ public class IntGenerator {
     private int currentEvenValue = 0;
     private volatile boolean canceled = false;
 
-    public synchronized int next(){
+    public synchronized int next() {
         ++currentEvenValue;
         return ++currentEvenValue;
     }
 
-    public void cancel(){
-        canceled=true;
+    public void cancel() {
+        canceled = true;
     }
-    public boolean isCanceled(){
+
+    public boolean isCanceled() {
         return canceled;
     }
 }

@@ -11,7 +11,7 @@ public class TestLoclaDateFormat {
 
     //6.ZonedDate、ZonedTime、ZonedDateTime ： 带时区的时间或日期
     @Test
-    public void test7(){
+    public void test7() {
         LocalDateTime ldt = LocalDateTime.now(ZoneId.of("Asia/Shanghai"));
         System.out.println(ldt);
 
@@ -20,7 +20,7 @@ public class TestLoclaDateFormat {
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         Set<String> set = ZoneId.getAvailableZoneIds();
         set.forEach(System.out::println);
     }
@@ -28,7 +28,7 @@ public class TestLoclaDateFormat {
 
     //5. DateTimeFormatter : 解析和格式化日期或时间
     @Test
-    public void test5(){
+    public void test5() {
 //		DateTimeFormatter dtf = DateTimeFormatter.ISO_LOCAL_DATE;
 
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy年MM月dd日 HH:mm:ss E");
@@ -44,7 +44,7 @@ public class TestLoclaDateFormat {
 
     //4. TemporalAdjuster : 时间校正器
     @Test
-    public void test4(){
+    public void test4() {
         LocalDateTime ldt = LocalDateTime.now();
         System.out.println(ldt);
 
@@ -60,11 +60,11 @@ public class TestLoclaDateFormat {
 
             DayOfWeek dow = ldt4.getDayOfWeek();
 
-            if(dow.equals(DayOfWeek.FRIDAY)){
+            if (dow.equals(DayOfWeek.FRIDAY)) {
                 return ldt4.plusDays(3);
-            }else if(dow.equals(DayOfWeek.SATURDAY)){
+            } else if (dow.equals(DayOfWeek.SATURDAY)) {
                 return ldt4.plusDays(2);
-            }else{
+            } else {
                 return ldt4.plusDays(1);
             }
         });
@@ -75,7 +75,7 @@ public class TestLoclaDateFormat {
 
 
     @Test
-    public  void test3(){
+    public void test3() {
         Instant now = Instant.now();
 
         System.out.println("----------------");
@@ -88,21 +88,21 @@ public class TestLoclaDateFormat {
 
         Instant now1 = Instant.now();
         //Duration获取两个时间间隔
-        System.out.println("耗费的时间是："+Duration.between(now1,now));
+        System.out.println("耗费的时间是：" + Duration.between(now1, now));
 
         System.out.println("-----------------------------------");
 
         LocalDate now2 = LocalDate.now();
         LocalDate of = LocalDate.of(2011, 1, 1);
 
-        Period between = Period.between(of,now2 );
+        Period between = Period.between(of, now2);
         System.out.println(between.getYears());
         System.out.println(between.getMonths());
         System.out.println(between.getDays());
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         Instant now = Instant.now();
         System.out.println(now);
         System.out.println(now.getNano());
@@ -113,9 +113,10 @@ public class TestLoclaDateFormat {
         System.out.println(instant);
 
     }
+
     //LocalDate LocalTime LocalDateTime
     @Test
-    public void test1(){
+    public void test1() {
 
         LocalDateTime now = LocalDateTime.now();
 

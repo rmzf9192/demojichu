@@ -8,7 +8,7 @@ package com.el.jichu.designpattern.strategy;
  */
 public class TestCalculator {
     public static void main(String[] args) {
-        String exp="2+8";
+        String exp = "2+8";
         Calculator plus = new Plus();
         int calculate = plus.calculate(exp);
         System.out.println(calculate);

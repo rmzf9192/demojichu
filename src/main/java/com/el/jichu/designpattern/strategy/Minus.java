@@ -10,6 +10,6 @@ public class Minus extends AbstractCalculator implements Calculator {
     @Override
     public int calculate(String exp) {
         int[] split = split(exp, "-");
-        return split[0]-split[1];
+        return split[0] - split[1];
     }
 }

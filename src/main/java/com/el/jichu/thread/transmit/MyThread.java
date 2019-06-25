@@ -19,8 +19,8 @@ public class MyThread implements Runnable {
         int i1 = random.nextInt(2000);
         int i2 = random.nextInt(3000);
         Data data = new Data();
-        List<Integer> arrayList = Arrays.asList(i,i1,i2);
-        work.process1(data,i,i1,i2);//使用回调函数
+        List<Integer> arrayList = Arrays.asList(i, i1, i2);
+        work.process1(data, i, i1, i2);//使用回调函数
         System.out.println(String.valueOf(i) + "+" + String.valueOf(i1) + "+"
                 + String.valueOf(i2) + "=" + data.value);
     }

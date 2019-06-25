@@ -16,5 +16,6 @@ public abstract class User {
     public Mediator getMediator() {
         return mediator;
     }
+
     public abstract void work();
 }

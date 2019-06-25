@@ -4,9 +4,7 @@ package com.el.jichu.designpattern.interpreter;
  * @Auther: roman.zhang
  * @Date: 2019/1/3 17:26
  * @Version:V1.0
- * @Description:Context
- *
- * Context 类是一个上下文环境类，Plus 和 Minus 分别是用来计算的实现
+ * @Description:Context Context 类是一个上下文环境类，Plus 和 Minus 分别是用来计算的实现
  */
 public class Context {
     private int num1;

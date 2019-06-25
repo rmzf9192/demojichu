@@ -6,9 +6,10 @@ package com.el.jichu.designpattern.adapter;
  * @Version:V1.0
  * @Description:Sourceable
  */
-public interface Sourceable  {
+public interface Sourceable {
 
     public void method1();
+
     public void method2();
 
 

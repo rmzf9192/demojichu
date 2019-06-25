@@ -16,23 +16,21 @@ import java.nio.file.StandardOpenOption;
  * @Auther: Roman.zhang
  * @Date: 2018/12/20 9:25
  * @Version:V1.0
- * @Description:TestBlockingNio
- *
- * 1.使用NIO网络通信的三个核心
- *   1.通道（Channel）：负责连接
- *      java.nio.channels.Channel
- *        |--SelectableChannel
- *          |--SocketChannel
- *          |--ServerSocketChannel
- *          |--DatagramChannel
- *
- *          |--Pipe.SinkChannel
- *          |--Pipe.SourceChannel
- *   2.缓冲区(Buffer) :负责数据的存储
- *   3.选择器(Selector):是SelectableChannel的多路复用器，用于监控SelectableChannel的IO状况
- *
- *   注意：
- *     先执行服务端，一旦接收到客户端发送的数据，将会执行
+ * @Description:TestBlockingNio 1.使用NIO网络通信的三个核心
+ * 1.通道（Channel）：负责连接
+ * java.nio.channels.Channel
+ * |--SelectableChannel
+ * |--SocketChannel
+ * |--ServerSocketChannel
+ * |--DatagramChannel
+ * <p>
+ * |--Pipe.SinkChannel
+ * |--Pipe.SourceChannel
+ * 2.缓冲区(Buffer) :负责数据的存储
+ * 3.选择器(Selector):是SelectableChannel的多路复用器，用于监控SelectableChannel的IO状况
+ * <p>
+ * 注意：
+ * 先执行服务端，一旦接收到客户端发送的数据，将会执行
  */
 public class TestBlockingNio {
     //客户端 --本地服务-主要功能是，读取本地文件，并写到网络通信通道中
@@ -47,7 +45,7 @@ public class TestBlockingNio {
         //2.分配缓冲区大小
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
         //读取本地文件，并发送到服务端
-        while(inChannel.read(byteBuffer)!=-1){
+        while (inChannel.read(byteBuffer) != -1) {
             //切换到读模式
             byteBuffer.flip();
             //写入到网络通道中
@@ -79,7 +77,7 @@ public class TestBlockingNio {
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
 
         //读取客户端发送的数据，并写入到指定路径下
-        while(socketChannel.read(byteBuffer)!=-1){
+        while (socketChannel.read(byteBuffer) != -1) {
             //切换模式
             byteBuffer.flip();
             outChannel.write(byteBuffer);

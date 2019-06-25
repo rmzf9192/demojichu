@@ -9,7 +9,7 @@ package com.el.jichu.designpattern.bridge;
 public class TestMyBridge {
     public static void main(String[] args) {
         Bridge bridge = new MyBridge();
-       //调用第一个对象
+        //调用第一个对象
         Sourceable sourceSub1 = new SourceSub1();
         bridge.setSourceable(sourceSub1);
         bridge.method();

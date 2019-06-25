@@ -8,15 +8,15 @@ package com.el.jichu.designpattern.templatemethod;
  */
 public abstract class AbstractCalculator {
     //主方法实现对本类其他方法的调用
-    public final int calculator(String exp,String opt){
+    public final int calculator(String exp, String opt) {
         int[] split = split(exp, opt);
-        return calculator(split[0],split[1]);
+        return calculator(split[0], split[1]);
     }
 
     //被子类重写的方法
-    abstract public int calculator(int num1,int num2);
+    abstract public int calculator(int num1, int num2);
 
-    public int[] split(String exp,String opt){
+    public int[] split(String exp, String opt) {
         String[] split = exp.split(opt);
         int[] ints = new int[2];
         ints[0] = Integer.parseInt(split[0]);

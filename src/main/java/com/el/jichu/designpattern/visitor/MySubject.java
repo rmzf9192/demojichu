@@ -9,7 +9,7 @@ package com.el.jichu.designpattern.visitor;
 public class MySubject implements Subject {
     @Override
     public void accept(Visitor visitor) {
-        System.out.println("this;"+this);
+        System.out.println("this;" + this);
         visitor.visit(this);
     }
 

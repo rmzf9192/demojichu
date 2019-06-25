@@ -30,16 +30,17 @@ public class TestNotBlockingNio2 {
 
         Scanner scanner = new Scanner(System.in);
 
-        while(scanner.hasNext()){
+        while (scanner.hasNext()) {
             String next = scanner.next();
 
-            byteBuffer.put((new Date().toString()+"\n"+next).getBytes());
+            byteBuffer.put((new Date().toString() + "\n" + next).getBytes());
             byteBuffer.flip();
-            dc.send(byteBuffer,new InetSocketAddress("127.0.0.1",9898));
+            dc.send(byteBuffer, new InetSocketAddress("127.0.0.1", 9898));
             byteBuffer.clear();
         }
         dc.close();
     }
+
     //接收
     @Test
     public void received() throws IOException {
@@ -51,15 +52,15 @@ public class TestNotBlockingNio2 {
         Selector selector = Selector.open();
         datagramChannel.register(selector, SelectionKey.OP_READ);
 
-        while(selector.select()>0){
+        while (selector.select() > 0) {
             Iterator<SelectionKey> it = selector.selectedKeys().iterator();
-            while(it.hasNext()){
+            while (it.hasNext()) {
                 SelectionKey next = it.next();
-                if(next.isReadable()){
+                if (next.isReadable()) {
                     ByteBuffer allocate = ByteBuffer.allocate(1024);
                     datagramChannel.receive(allocate);
                     allocate.flip();
-                    System.out.println((new String(allocate.array(),0,allocate.limit())));
+                    System.out.println((new String(allocate.array(), 0, allocate.limit())));
                     allocate.clear();
                 }
             }

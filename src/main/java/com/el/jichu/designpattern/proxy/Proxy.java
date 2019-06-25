@@ -19,10 +19,12 @@ public class Proxy implements Sourceable {
         source.method();
         after();
     }
-    private void before(){
+
+    private void before() {
         System.out.println("before proxy");
     }
-    private void after(){
+
+    private void after() {
         System.out.println("after proxy");
     }
 }

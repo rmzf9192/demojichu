@@ -7,10 +7,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @Auther: roman.zhang
  * @Date: 2018/12/23 12:40
  * @Version:V1.0
- * @Description:TestReadWriteLock
- *
- * 1. ReadWriteLock : 读写锁
- *
+ * @Description:TestReadWriteLock 1. ReadWriteLock : 读写锁
+ * <p>
  * 写写/读写 需要“互斥”
  * 读读 不需要互斥
  */
@@ -23,7 +21,7 @@ public class TestReadWriteLock {
 
             @Override
             public void run() {
-                rw.set((int)(Math.random() * 101));
+                rw.set((int) (Math.random() * 101));
             }
         }, "Write:").start();
 
@@ -35,37 +33,37 @@ public class TestReadWriteLock {
                 public void run() {
                     rw.get();
                 }
-            },"read").start();
+            }, "read").start();
         }
     }
 
 }
 
-class ReadWriteLockDemo{
+class ReadWriteLockDemo {
 
     private int number = 0;
 
     private ReadWriteLock lock = new ReentrantReadWriteLock();
 
     //读
-    public void get(){
+    public void get() {
         lock.readLock().lock(); //上锁
 
-        try{
+        try {
             System.out.println(Thread.currentThread().getName() + " : " + number);
-        }finally{
+        } finally {
             lock.readLock().unlock(); //释放锁
         }
     }
 
     //写
-    public void set(int number){
+    public void set(int number) {
         lock.writeLock().lock();
 
-        try{
-            System.out.println(Thread.currentThread().getName()+":"+number);
+        try {
+            System.out.println(Thread.currentThread().getName() + ":" + number);
             this.number = number;
-        }finally{
+        } finally {
             lock.writeLock().unlock();
         }
     }

@@ -1,4 +1,5 @@
 package com.el.jichu.thread;
+
 import org.junit.Test;
 
 import java.time.Duration;
@@ -33,7 +34,7 @@ public class TestForkJoinPool {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         Instant start = Instant.now();
 
         long sum = 0L;
@@ -51,7 +52,7 @@ public class TestForkJoinPool {
 
     //java8 新特性
     @Test
-    public void test2(){
+    public void test2() {
         Instant start = Instant.now();
 
         Long sum = LongStream.rangeClosed(0L, 50000000000L)
@@ -67,7 +68,7 @@ public class TestForkJoinPool {
 
 }
 
-class ForkJoinSumCalculate extends RecursiveTask<Long>{
+class ForkJoinSumCalculate extends RecursiveTask<Long> {
 
     /**
      *
@@ -88,7 +89,7 @@ class ForkJoinSumCalculate extends RecursiveTask<Long>{
     protected Long compute() {
         long length = end - start;
 
-        if(length <= THURSHOLD){
+        if (length <= THURSHOLD) {
             long sum = 0L;
 
             for (long i = start; i <= end; i++) {
@@ -96,13 +97,13 @@ class ForkJoinSumCalculate extends RecursiveTask<Long>{
             }
 
             return sum;
-        }else{
+        } else {
             long middle = (start + end) / 2;
 
             ForkJoinSumCalculate left = new ForkJoinSumCalculate(start, middle);
             left.fork(); //进行拆分，同时压入线程队列
 
-            ForkJoinSumCalculate right = new ForkJoinSumCalculate(middle+1, end);
+            ForkJoinSumCalculate right = new ForkJoinSumCalculate(middle + 1, end);
             right.fork(); //
 
             return left.join() + right.join();

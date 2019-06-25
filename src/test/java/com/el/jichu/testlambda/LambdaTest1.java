@@ -12,34 +12,34 @@ public class LambdaTest1 {
 
     //使用匿名函数
     @Test
-    public void test(){
-       Comparator<String> comparator=new Comparator<String>() {
-           @Override
-           public int compare(String o1, String o2) {
-               Integer i=Integer.compare(o1.length(),o2.length());
-               return i;
-           }
-       };
-        TreeSet<String> treeSet = new TreeSet<>(comparator);
-        treeSet.comparator().compare("jjjj","pppp");
-
-        System.out.println(comparator.compare("hasd","jjsha")+",,"+treeSet);
-        TreeSet<String> treeSet1=new TreeSet<>(new Comparator<String>() {
+    public void test() {
+        Comparator<String> comparator = new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
-                Integer i=Integer.compare(o1.length(),o2.length());
+                Integer i = Integer.compare(o1.length(), o2.length());
+                return i;
+            }
+        };
+        TreeSet<String> treeSet = new TreeSet<>(comparator);
+        treeSet.comparator().compare("jjjj", "pppp");
+
+        System.out.println(comparator.compare("hasd", "jjsha") + ",," + treeSet);
+        TreeSet<String> treeSet1 = new TreeSet<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                Integer i = Integer.compare(o1.length(), o2.length());
                 return i;
             }
         });
-        System.out.println(treeSet1.comparator().compare("sss","dfa"));
+        System.out.println(treeSet1.comparator().compare("sss", "dfa"));
     }
 
     //现在的lambda语法
     @Test
-    public void test2(){
-        Comparator<String> comparator=(x,y)->Integer.compare(x.length(),y.length());
-        TreeSet<String> treeSet=new TreeSet<>(comparator);
-        System.out.println(treeSet.comparator().compare("jjj","kk"));
+    public void test2() {
+        Comparator<String> comparator = (x, y) -> Integer.compare(x.length(), y.length());
+        TreeSet<String> treeSet = new TreeSet<>(comparator);
+        System.out.println(treeSet.comparator().compare("jjj", "kk"));
     }
 
     List<Employee> emps = Arrays.asList(
@@ -51,11 +51,11 @@ public class LambdaTest1 {
     );
 
     //需求获取年龄小于35岁的员工
-    public List<Employee> getEmpsByAge (List<Employee> list){
-        List<Employee> empList=new ArrayList<>();
+    public List<Employee> getEmpsByAge(List<Employee> list) {
+        List<Employee> empList = new ArrayList<>();
 
-        for (Employee employee:list){
-            if(employee.getAge()>35){
+        for (Employee employee : list) {
+            if (employee.getAge() > 35) {
                 empList.add(employee);
             }
         }
@@ -63,46 +63,49 @@ public class LambdaTest1 {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         List<Employee> empsByAge = this.getEmpsByAge(emps);
-        for (Employee e:empsByAge){
+        for (Employee e : empsByAge) {
             System.out.println(e);
         }
         int[] arr = new int[3];
-        int i=0;
+        int i = 0;
         arr[0] = 1;
         arr[1] = 2;
         arr[2] = 3;
         int searchKey = 3;
-        for(System.out.println("A");i<arr.length;i++){
+        for (System.out.println("A"); i < arr.length; i++) {
             System.out.println("B");
         }
     }
+
     //需求：获取工资大于5000的员工
-    public List<Employee> getEmpsBySalary(List<Employee> list){
-        List<Employee> employees=new ArrayList<>();
-        for(Employee employee:list){
-            if(employee.getSalary()>5000){
+    public List<Employee> getEmpsBySalary(List<Employee> list) {
+        List<Employee> employees = new ArrayList<>();
+        for (Employee employee : list) {
+            if (employee.getSalary() > 5000) {
                 employees.add(employee);
             }
         }
         return employees;
     }
+
     @Test
-    public void Test4(){
+    public void Test4() {
         List<Employee> empsBySalary = getEmpsBySalary(emps);
 
-        for(Employee employee:empsBySalary){
+        for (Employee employee : empsBySalary) {
             System.out.println(employee);
         }
 
     }
-    //优化方式一：策略设计模式
-    public List<Employee> filterEmployee(List<Employee> list, MyPredicate<Employee> mp){
-        List<Employee> employeeList=new ArrayList<>();
 
-        for(Employee employee:list){
-            if(mp.test(employee)){
+    //优化方式一：策略设计模式
+    public List<Employee> filterEmployee(List<Employee> list, MyPredicate<Employee> mp) {
+        List<Employee> employeeList = new ArrayList<>();
+
+        for (Employee employee : list) {
+            if (mp.test(employee)) {
                 employeeList.add(employee);
             }
         }
@@ -110,50 +113,53 @@ public class LambdaTest1 {
     }
 
     @Test
-    public void test5(){
+    public void test5() {
         List<Employee> employees = filterEmployee(emps, new FilterEmployeeForAge());
 
-        for (Employee employee:employees){
+        for (Employee employee : employees) {
             System.out.println(employee);
         }
         System.out.println("===============================================");
 
-        List<Employee> employees1=filterEmployee(emps,new FilterEmployeeForSalary());
+        List<Employee> employees1 = filterEmployee(emps, new FilterEmployeeForSalary());
 
-        for(Employee employee:employees1){
+        for (Employee employee : employees1) {
             System.out.println(employee);
         }
 
     }
+
     //优化方式二：匿名内部类
     @Test
-    public void test6(){
-        List<Employee> lists=filterEmployee(emps, new MyPredicate<Employee>() {
+    public void test6() {
+        List<Employee> lists = filterEmployee(emps, new MyPredicate<Employee>() {
             @Override
             public boolean test(Employee employee) {
-                return employee.getSalary()<5000;
+                return employee.getSalary() < 5000;
             }
         });
-        for(Employee employee:lists){
+        for (Employee employee : lists) {
             System.out.println(employee);
         }
     }
+
     //优化方式三：lambda语法
     @Test
-    public void test7(){
+    public void test7() {
         //lambda：方法引用
-        List<Employee> lists=filterEmployee(emps,(e)->e.getAge()>35);
+        List<Employee> lists = filterEmployee(emps, (e) -> e.getAge() > 35);
         lists.forEach(System.out::println);
         System.out.println("-------------------------------");
         //lambda:正常形式
-        List<Employee> list=filterEmployee(emps,(employee -> employee.getAge()>35));
-        list.forEach((e)-> System.out.println(e));
+        List<Employee> list = filterEmployee(emps, (employee -> employee.getAge() > 35));
+        list.forEach((e) -> System.out.println(e));
     }
-   //优化四：Stream API
+
+    //优化四：Stream API
     @Test
-    public void test8(){
+    public void test8() {
         emps.stream()
-                .filter((e)->e.getAge()>35)
+                .filter((e) -> e.getAge() > 35)
                 .forEach(System.out::println);
         System.out.println("---------------------------");
 

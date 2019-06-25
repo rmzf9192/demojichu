@@ -6,15 +6,16 @@ package com.el.jichu.designpattern.simplefactory;
 public class SimpleFactory {
     /**
      * 一个方法
+     *
      * @param type
      * @return
      */
-    public Sender produce(String type){
-        if("MailSender".equals(type)){
+    public Sender produce(String type) {
+        if ("MailSender".equals(type)) {
             return new MailSender();
-        }else if("SmsSender".equals(type)){
+        } else if ("SmsSender".equals(type)) {
             return new SmsSender();
-        }else{
+        } else {
             System.out.println("请输入正确的类型");
             return null;
         }
@@ -22,12 +23,14 @@ public class SimpleFactory {
 
     /**
      * 多个方法的工厂模式
+     *
      * @return
      */
-    public static Sender mailSender(){
+    public static Sender mailSender() {
         return new MailSender();
     }
-    public static Sender smsSender(){
+
+    public static Sender smsSender() {
         return new SmsSender();
     }
 }

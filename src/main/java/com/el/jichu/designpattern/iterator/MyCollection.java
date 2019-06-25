@@ -7,11 +7,11 @@ package com.el.jichu.designpattern.iterator;
  * @Description:MyCollection
  */
 public class MyCollection implements Collection {
-    public String string[] = {"A","B","C","D","E"};
+    public String string[] = {"A", "B", "C", "D", "E"};
 
     @Override
     public Iterator iterator() {
-        System.out.println("this:"+this);
+        System.out.println("this:" + this);
         return new MyIterator(this);
     }
 

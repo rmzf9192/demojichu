@@ -33,12 +33,12 @@ public class Stream {
         }
         inputStream.close();*/
 
-       //如果不存在，则创建文件
+        //如果不存在，则创建文件
         File file = new File("F:\\资料\\test.txt");
         //创建一个输出流对象
         FileOutputStream fos = new FileOutputStream(file);
         //创建一个OutputStreamWriter对象，参数可以指定编码
-        OutputStreamWriter osw = new OutputStreamWriter(fos,"UTF-8");
+        OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
 
         //写入缓冲区
         osw.write("中文输入");
@@ -57,7 +57,7 @@ public class Stream {
 
         StringBuffer stringBuffer = new StringBuffer();
 
-        while(isr.ready()){
+        while (isr.ready()) {
             stringBuffer.append((char) isr.read());
         }
 

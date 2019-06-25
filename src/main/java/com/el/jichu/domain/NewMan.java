@@ -5,11 +5,11 @@ import java.util.Optional;
 //注意Optional  不能被序列化
 public class NewMan {
 
-    private Optional<Godness> godness=Optional.empty();
+    private Optional<Godness> godness = Optional.empty();
 
     private Godness god;
 
-    public Optional<Godness> getGod(){
+    public Optional<Godness> getGod() {
         return Optional.of(god);
     }
 

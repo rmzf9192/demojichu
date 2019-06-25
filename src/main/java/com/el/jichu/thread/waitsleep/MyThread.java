@@ -13,24 +13,27 @@ public class MyThread implements Runnable {
 
     @Override
     public void run() {
-      int count =10;
-      while(count>0){
-          synchronized (prev){
-              synchronized (self){
-                  System.out.print(name);
-                  count--;
-                  self.notify();
-              }
-              try {
-                  prev.wait();
-              } catch (InterruptedException e) {
-                  e.printStackTrace();
-              }
-          }
-      }
+        int count = 10;
+        while (count > 0) {
+            synchronized (prev) {
+                synchronized (self) {
+                    for(int i=0;i<10;i++){
+                        System.out.print(name);
+                        count--;
+                    }
+                    System.out.println();
+                    self.notify();
+                }
+                try {
+                    prev.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
-    public static void main(String[] args)throws Exception {
+    public static void main(String[] args) throws Exception {
         Object a = new Object();
         Object b = new Object();
         Object c = new Object();

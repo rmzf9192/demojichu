@@ -18,9 +18,9 @@ public class WaxOn implements Runnable {
     public void run() {
 
         try {
-            while (!Thread.interrupted()){
-               //开始涂蜡
-                System.out.println("WaxOn:开始涂蜡-》"+Thread.currentThread().getName());
+            while (!Thread.interrupted()) {
+                //开始涂蜡
+                System.out.println("WaxOn:开始涂蜡-》" + Thread.currentThread().getName());
                 //模拟涂蜡的时间
                 TimeUnit.MILLISECONDS.sleep(200);
                 car.waxOn();

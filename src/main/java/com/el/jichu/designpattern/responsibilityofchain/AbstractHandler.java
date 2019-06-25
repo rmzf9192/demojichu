@@ -6,7 +6,7 @@ package com.el.jichu.designpattern.responsibilityofchain;
  * @Version:V1.0
  * @Description:AbstractHandler
  */
-public abstract class AbstractHandler  {
+public abstract class AbstractHandler {
 
     private Handler handler;
 

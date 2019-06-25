@@ -6,15 +6,14 @@ import java.io.*;
  * @Auther: roman.zhang
  * @Date: 2018/12/24 22:05
  * @Version:V1.0
- * @Description:Prototype
- *   原型模式
- *
+ * @Description:Prototype 原型模式
  */
 public class Prototype implements Cloneable, Serializable {
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     private String string;
     private Serializable obj;
+
     /*
     浅复制
      */
@@ -22,6 +21,7 @@ public class Prototype implements Cloneable, Serializable {
         Prototype clone = (Prototype) super.clone();
         return clone;
     }
+
     /*
     深复制
      */
@@ -55,6 +55,7 @@ public class Prototype implements Cloneable, Serializable {
         this.obj = obj;
     }
 }
-class SerializableObject  implements Serializable{
-    private static final long serialVersionUID=1L;
+
+class SerializableObject implements Serializable {
+    private static final long serialVersionUID = 1L;
 }

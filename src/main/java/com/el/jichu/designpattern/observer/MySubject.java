@@ -6,7 +6,7 @@ package com.el.jichu.designpattern.observer;
  * @Version:V1.0
  * @Description:MySubject
  */
-public class MySubject extends AbstractSubject{
+public class MySubject extends AbstractSubject {
     @Override
     public void operate() {
         System.out.println("update self");

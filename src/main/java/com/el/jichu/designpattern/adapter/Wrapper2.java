@@ -8,9 +8,11 @@ package com.el.jichu.designpattern.adapter;
  */
 public abstract class Wrapper2 implements Sourceable {
 
-    public void method1(){
+    public void method1() {
 
     }
-    public void method2(){}
+
+    public void method2() {
+    }
 
 }

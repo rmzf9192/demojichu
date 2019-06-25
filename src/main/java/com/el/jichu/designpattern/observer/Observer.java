@@ -6,6 +6,6 @@ package com.el.jichu.designpattern.observer;
  * @Version:V1.0
  * @Description:Observer
  */
-public interface Observer  {
+public interface Observer {
     public void update();
 }

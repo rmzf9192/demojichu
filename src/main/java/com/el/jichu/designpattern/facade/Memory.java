@@ -7,10 +7,11 @@ package com.el.jichu.designpattern.facade;
  * @Description:Memory
  */
 public class Memory {
-    public void startup(){
+    public void startup() {
         System.out.println("Memory startup");
     }
-    public void shutdown(){
+
+    public void shutdown() {
         System.out.println("Memory shutdown");
 
     }

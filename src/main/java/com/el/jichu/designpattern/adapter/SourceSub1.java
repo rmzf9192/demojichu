@@ -8,7 +8,7 @@ package com.el.jichu.designpattern.adapter;
  */
 public class SourceSub1 extends Wrapper2 {
 
-    public void method1(){
+    public void method1() {
         System.out.println("this is the sourcesub1 method1");
     }
 }

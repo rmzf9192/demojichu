@@ -11,13 +11,13 @@ public class DeliteFiles {
 
     private static void deleteFiles(File file) {
         File[] files = file.listFiles();
-        if(files!=null){
-            for(File f:files){
-                 if(f.isDirectory()){
-                     deleteFiles(f);
-                 }else{
-                     f.delete();
-                 }
+        if (files != null) {
+            for (File f : files) {
+                if (f.isDirectory()) {
+                    deleteFiles(f);
+                } else {
+                    f.delete();
+                }
             }
         }
         file.delete();

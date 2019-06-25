@@ -14,11 +14,11 @@ public class FileInfo implements Comparable<FileInfo> {
 
     public void readNext() throws IOException {
         String data = bufferedReader.readLine();
-        if(data!=null)
-            this.currentNum=Integer.valueOf(data);
+        if (data != null)
+            this.currentNum = Integer.valueOf(data);
         else
             //代表当前出牌人手中无牌
-            this.currentNum=-1;
+            this.currentNum = -1;
     }
 
     public BufferedReader getBufferedReader() {
@@ -48,9 +48,9 @@ public class FileInfo implements Comparable<FileInfo> {
 
     @Override
     public int compareTo(FileInfo fileInfo) {
-        if(fileInfo.getCurrentNum()!=currentNum){
-            return currentNum-fileInfo.currentNum;
-        }else{
+        if (fileInfo.getCurrentNum() != currentNum) {
+            return currentNum - fileInfo.currentNum;
+        } else {
             return fileName.compareTo(fileInfo.getFileName());
         }
     }

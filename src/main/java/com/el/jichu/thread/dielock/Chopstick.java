@@ -7,20 +7,21 @@ import java.util.concurrent.TimeUnit;
  */
 public class Chopstick {
 
-    private boolean taken=false;
+    private boolean taken = false;
 
     //拿起筷子
-    public synchronized void taken() throws InterruptedException{
-        while(taken){
-           //为true时，拿起筷子
+    public synchronized void taken() throws InterruptedException {
+        while (taken) {
+            //为true时，拿起筷子
             wait();
         }
         TimeUnit.SECONDS.sleep(10);
-        taken=true;
+        taken = true;
     }
+
     //放下筷子
-    public synchronized void drop(){
-        taken=false;
+    public synchronized void drop() {
+        taken = false;
         notify();
     }
 }

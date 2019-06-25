@@ -4,17 +4,17 @@ public class ArraySort implements Runnable {
     private String num;
 
     public ArraySort(int num) {
-        this.num = num+"";
+        this.num = num + "";
     }
 
     public ArraySort() {
     }
 
-    public static void main(String[] args){
-         //把这个数字升序输出
-        int[]  nums={11,3,998,5455,5455,152,990};
+    public static void main(String[] args) {
+        //把这个数字升序输出
+        int[] nums = {11, 3, 998, 5455, 5455, 152, 990};
 
-        for(int i=0;i<nums.length;i++){
+        for (int i = 0; i < nums.length; i++) {
             ArraySort arraySort = new ArraySort(nums[i]);
             new Thread(arraySort).start();
         }

@@ -20,14 +20,14 @@ public class TestPaths {
 
     //自动资源管理：自动关闭实现 AutoCloseable 接口的资源
     @Test
-    public void test8(){
-        try(FileChannel inChannel = FileChannel.open(Paths.get("1.jpg"), StandardOpenOption.READ);
-            FileChannel outChannel = FileChannel.open(Paths.get("2.jpg"), StandardOpenOption.WRITE, StandardOpenOption.CREATE)){
+    public void test8() {
+        try (FileChannel inChannel = FileChannel.open(Paths.get("1.jpg"), StandardOpenOption.READ);
+             FileChannel outChannel = FileChannel.open(Paths.get("2.jpg"), StandardOpenOption.WRITE, StandardOpenOption.CREATE)) {
 
             ByteBuffer buf = ByteBuffer.allocate(1024);
             inChannel.read(buf);
 
-        }catch(IOException e){
+        } catch (IOException e) {
 
         }
     }
@@ -40,7 +40,7 @@ public class TestPaths {
             OutputStream newOutputStream(Path path, OpenOption…how) : 获取 OutputStream 对象
      */
     @Test
-    public void test7() throws IOException{
+    public void test7() throws IOException {
         SeekableByteChannel newByteChannel = Files.newByteChannel(Paths.get("1.txt"), StandardOpenOption.READ);
 
         DirectoryStream<Path> newDirectoryStream = Files.newDirectoryStream(Paths.get("e:/"));
@@ -62,7 +62,7 @@ public class TestPaths {
             public static <A extends BasicFileAttributes> A readAttributes(Path path,Class<A> type,LinkOption... options) : 获取与 path 指定的文件相关联的属性。
      */
     @Test
-    public void test6() throws IOException{
+    public void test6() throws IOException {
         Path path = Paths.get("e:/nio/hello7.txt");
 //		System.out.println(Files.exists(path, LinkOption.NOFOLLOW_LINKS));
 
@@ -100,13 +100,15 @@ public class TestPaths {
 
 //		Files.move(path1, path2, StandardCopyOption.ATOMIC_MOVE);
     }
+
     @Test
     public void test3() throws IOException {
         Path path = Paths.get("E:\\study\\1.txt");
         Path path1 = Paths.get("E:\\study\\2.txt");
 
-        Files.copy(path,path1, StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(path, path1, StandardCopyOption.REPLACE_EXISTING);
     }
+
     /*
 		Paths 提供的 get() 方法用来获取 Path 对象：
 			Path get(String first, String … more) : 用于将多个字符串串连成路径。
@@ -124,7 +126,7 @@ public class TestPaths {
 			String toString() ： 返回调用 Path 对象的字符串表示形式
 	 */
     @Test
-    public void test2(){
+    public void test2() {
         Path path = Paths.get("E:/study/1.txt");
         System.out.println(path.getParent());
         System.out.println(path.getRoot());
@@ -137,8 +139,9 @@ public class TestPaths {
         System.out.println(path.toString());
 
     }
+
     @Test
-    public void test1(){
+    public void test1() {
         Path path = Paths.get("E:/", "/study/1.txt");
         System.out.println(path.endsWith("txt"));
 
@@ -146,7 +149,7 @@ public class TestPaths {
         System.out.println(path.isAbsolute());
         System.out.println(path.getFileName());
 
-        for(int i=0;i<path.getNameCount();i++){
+        for (int i = 0; i < path.getNameCount(); i++) {
             System.out.println(path.getName(i));
         }
     }

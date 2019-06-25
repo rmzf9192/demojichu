@@ -9,6 +9,6 @@ package com.el.jichu.designpattern.interpreter;
 public class Plus implements Expression {
     @Override
     public int interpret(Context context) {
-        return context.getNum1()+context.getNum2();
+        return context.getNum1() + context.getNum2();
     }
 }

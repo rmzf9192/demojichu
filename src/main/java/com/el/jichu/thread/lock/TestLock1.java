@@ -21,7 +21,7 @@ public class TestLock1 {
 
 }
 
-class Ticket implements Runnable{
+class Ticket implements Runnable {
 
     private int tick = 100;
 
@@ -29,12 +29,12 @@ class Ticket implements Runnable{
 
     @Override
     public void run() {
-        while(true){
+        while (true) {
 
             lock.lock(); //上锁
 
-            try{
-                if(tick > 0){
+            try {
+                if (tick > 0) {
                     try {
                         Thread.sleep(200);
                     } catch (InterruptedException e) {
@@ -42,7 +42,7 @@ class Ticket implements Runnable{
 
                     System.out.println(Thread.currentThread().getName() + " 完成售票，余票为：" + --tick);
                 }
-            }finally{
+            } finally {
                 lock.unlock(); //释放锁
             }
         }

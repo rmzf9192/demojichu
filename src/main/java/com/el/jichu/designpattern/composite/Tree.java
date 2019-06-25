@@ -4,11 +4,10 @@ package com.el.jichu.designpattern.composite;
  * @Auther: roman.zhang
  * @Date: 2018/12/28 10:10
  * @Version:V1.0
- * @Description:Tree:组合模式测试
- * 使用场景：将多个对象组合在一起进行操作，常用于表示树形结构中，例如二叉树，数等。
+ * @Description:Tree:组合模式测试 使用场景：将多个对象组合在一起进行操作，常用于表示树形结构中，例如二叉树，数等。
  */
 public class Tree {
-    private TreeNode treeNode=null;
+    private TreeNode treeNode = null;
 
     public Tree(String name) {
         this.treeNode = new TreeNode(name);

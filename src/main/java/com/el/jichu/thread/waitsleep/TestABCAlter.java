@@ -8,10 +8,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Auther: roman.zhang
  * @Date: 2018/12/22 20:09
  * @Version:V1.0
- * @Description:TestABCAlter
- *
- * 编写一个程序，开启 3 个线程，这三个线程的 ID 分别为 A、B、C，每个线程将自己的 ID 在屏幕上打印 10 遍，要求输出的结果必须按顺序显示。
- *	如：ABCABCABC…… 依次递归
+ * @Description:TestABCAlter 编写一个程序，开启 3 个线程，这三个线程的 ID 分别为 A、B、C，每个线程将自己的 ID 在屏幕上打印 10 遍，要求输出的结果必须按顺序显示。
+ * 如：ABCABCABC…… 依次递归
  */
 public class TestABCAlter {
 
@@ -57,7 +55,7 @@ public class TestABCAlter {
 
 }
 
-class AlternateDemo{
+class AlternateDemo {
     private int number = 1; //当前正在执行线程的标记
 
     private Lock lock = new ReentrantLock();
@@ -68,12 +66,12 @@ class AlternateDemo{
     /**
      * @param totalLoop : 循环第几轮
      */
-    public void loopA(int totalLoop){
+    public void loopA(int totalLoop) {
         lock.lock();
 
         try {
             //1. 判断
-            if(number != 1){
+            if (number != 1) {
                 condition1.await();
             }
 
@@ -92,12 +90,12 @@ class AlternateDemo{
         }
     }
 
-    public void loopB(int totalLoop){
+    public void loopB(int totalLoop) {
         lock.lock();
 
         try {
             //1. 判断
-            if(number != 2){
+            if (number != 2) {
                 condition2.await();
             }
 
@@ -116,12 +114,12 @@ class AlternateDemo{
         }
     }
 
-    public void loopC(int totalLoop){
+    public void loopC(int totalLoop) {
         lock.lock();
 
         try {
             //1. 判断
-            if(number != 3){
+            if (number != 3) {
                 condition3.await();
             }
 

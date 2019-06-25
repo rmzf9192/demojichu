@@ -55,6 +55,7 @@ public class Employee {
     public String getName() {
         return name;
     }
+
     public String show() {
         return "测试方法引用！";
     }
@@ -106,7 +107,7 @@ public class Employee {
         return Objects.hash(id, name, age, salary);
     }
 
-    public enum Status{
-        FREE,BUSY,VOCATION
+    public enum Status {
+        FREE, BUSY, VOCATION
     }
 }

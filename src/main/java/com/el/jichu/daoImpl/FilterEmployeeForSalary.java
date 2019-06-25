@@ -6,6 +6,6 @@ import com.el.jichu.domain.Employee;
 public class FilterEmployeeForSalary implements MyPredicate<Employee> {
     @Override
     public boolean test(Employee employee) {
-        return employee.getSalary()>5000;
+        return employee.getSalary() > 5000;
     }
 }

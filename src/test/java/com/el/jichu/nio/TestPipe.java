@@ -33,7 +33,7 @@ public class TestPipe {
         byteBuffer.flip();
         int read = source.read(byteBuffer);
 
-        System.out.println(new String(byteBuffer.array(),0,read));
+        System.out.println(new String(byteBuffer.array(), 0, read));
 
         source.close();
         sinkChannel.close();

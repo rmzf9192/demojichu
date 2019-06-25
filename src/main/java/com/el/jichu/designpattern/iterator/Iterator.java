@@ -13,6 +13,7 @@ public interface Iterator {
 
     //后移
     Object next();
+
     boolean hasNext();
 
     //取得第一个元素

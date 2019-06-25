@@ -8,7 +8,7 @@ package com.el.jichu.designpattern.strategy;
  */
 public abstract class AbstractCalculator {
 
-    public int[] split(String exp,String opt){
+    public int[] split(String exp, String opt) {
         String[] split = exp.split(opt);
         int[] ints = new int[2];
 

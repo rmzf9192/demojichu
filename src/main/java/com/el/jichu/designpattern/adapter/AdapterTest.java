@@ -15,9 +15,9 @@ public class AdapterTest {
         adapter.method1();
         adapter.method2();
         */
-      //对象适配器
+        //对象适配器
         Source source = new Source();
-        Targetable targetable=new Wrapper(source);
+        Targetable targetable = new Wrapper(source);
         targetable.method1();
         targetable.method2();
     }

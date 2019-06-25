@@ -10,7 +10,7 @@ public class SimpleFactoryTest {
         sender.sender();
         Sender sender1 = simpleFactory.mailSender();
         sender1.sender();*/
-      //静态方法
+        //静态方法
         Sender sender = SimpleFactory.mailSender();
         sender.sender();
     }

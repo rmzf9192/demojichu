@@ -20,8 +20,8 @@ public class MyMediator implements Mediator {
 
     @Override
     public void createMediator() {
-        user1=new User1(this);
-        user2=new User2(this);
+        user1 = new User1(this);
+        user2 = new User2(this);
     }
 
     @Override

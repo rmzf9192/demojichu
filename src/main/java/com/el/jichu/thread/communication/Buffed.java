@@ -15,9 +15,9 @@ public class Buffed implements Runnable {
     @Override
     public void run() {
         try {
-            while(!Thread.interrupted()){
+            while (!Thread.interrupted()) {
                 car.waitWaxOn();
-                System.out.println("Buffed:开始抛光-》"+Thread.currentThread().getName());
+                System.out.println("Buffed:开始抛光-》" + Thread.currentThread().getName());
                 //模拟抛光的时间
                 TimeUnit.MILLISECONDS.sleep(200);
                 car.buffed();

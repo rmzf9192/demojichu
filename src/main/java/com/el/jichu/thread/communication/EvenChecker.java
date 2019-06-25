@@ -13,25 +13,26 @@ public class EvenChecker implements Runnable {
 
     @Override
     public void run() {
-     int val=0;
-     while(!intGenerator.isCanceled()){
-         val= intGenerator.next();
-         if(val%2!=0){
-             System.out.println("Error info --->" + val + " not even, threadInfo=" + Thread.currentThread().getName());
-             intGenerator.cancel();
-         }
-     }
+        int val = 0;
+        while (!intGenerator.isCanceled()) {
+            val = intGenerator.next();
+            if (val % 2 != 0) {
+                System.out.println("Error info --->" + val + " not even, threadInfo=" + Thread.currentThread().getName());
+                intGenerator.cancel();
+            }
+        }
     }
-    public static void test(IntGenerator gp, int count){
-        System.out.println("start test " + count + "  thread") ;
+
+    public static void test(IntGenerator gp, int count) {
+        System.out.println("start test " + count + "  thread");
         ExecutorService exec = Executors.newCachedThreadPool();
-        for(int i=0;i<count;i++){
+        for (int i = 0; i < count; i++) {
             exec.execute(new EvenChecker(gp));
         }
     }
 
-    public static void test(IntGenerator gp){
-        test(gp,5);
+    public static void test(IntGenerator gp) {
+        test(gp, 5);
     }
 
     public static void main(String[] args) {

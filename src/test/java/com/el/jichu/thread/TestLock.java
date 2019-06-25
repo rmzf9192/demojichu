@@ -10,8 +10,8 @@ import java.util.concurrent.locks.ReentrantLock;
 public class TestLock {
 
     @Test
-    public void test1(){
-        List<Employee> list=new ArrayList<>();
+    public void test1() {
+        List<Employee> list = new ArrayList<>();
 
         System.out.println(list);
     }

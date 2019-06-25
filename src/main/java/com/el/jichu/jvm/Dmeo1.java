@@ -13,17 +13,17 @@ public class Dmeo1 {
         System.out.println(dmeo1.getClass().getClassLoader().getParent().getParent());
         System.out.println(dmeo1.getClass().getClassLoader().getParent());
         System.out.println(dmeo1.getClass().getClassLoader());
-        val list=new ArrayList<String>();
+        val list = new ArrayList<String>();
         list.add("jhhh");
-        for(val l:list){
-            System.out.println("数组中的元素："+l);
+        for (val l : list) {
+            System.out.println("数组中的元素：" + l);
         }
-        new Thread(()->{
-            System.out.println(Thread.currentThread().getName()+"：hello");
+        new Thread(() -> {
+            System.out.println(Thread.currentThread().getName() + "：hello");
             Thread.currentThread().setPriority(2);
         }).start();
-        new Thread(()->{
-            System.out.println(Thread.currentThread().getName()+"：hello");
+        new Thread(() -> {
+            System.out.println(Thread.currentThread().getName() + "：hello");
             Thread.currentThread().setPriority(10);
         }).start();
 /*
