@@ -40,17 +40,17 @@ public class TestAnnotation {
 
     public static void main(String[] args) throws ClassNotFoundException {
         List<String> userNames = new ArrayList<String>() {{
-            add("Hollis");
-            add("hollis");
+            add("Hollis2");
+            add("hollis1");
             add("HollisChuang");
             add("H");
         }};
 
-       /* for (String userName : userNames) {
+        for (String userName : userNames) {
             if (userName.equals("Hollis")) {
                 userNames.remove(userName);
             }
-        }*/
+        }
         System.out.println(userNames);
 /**
  * java.util.ConcurrentModificationException

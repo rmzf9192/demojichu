@@ -24,6 +24,7 @@ public class BlockingQueneDemo {
       /*  System.out.println(blockingQueue.add("a"));
         System.out.println(blockingQueue.add("b"));
         System.out.println(blockingQueue.add("c"));
+        System.out.println(blockingQueue.add("d"));
 
         System.out.println(blockingQueue.element());
 
@@ -41,11 +42,32 @@ public class BlockingQueneDemo {
         System.out.println(blockingQueue.poll());
         System.out.println(blockingQueue.poll());
         System.out.println(blockingQueue.poll());*/
-     /*  blockingQueue.put("a");
+      /*  for (int i = 0; i <4 ; i++) {
+            new Thread(()->{
+                try {
+                    blockingQueue.put("a");
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            },String.valueOf(i)).start();
+        }
+
+        TimeUnit.SECONDS.sleep(3);
+
+        for (int i = 0; i <4 ; i++) {
+            new Thread(()->{
+                try {
+                    System.out.println(blockingQueue.take());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            },String.valueOf(i)).start();
+        }*/
+      /* blockingQueue.put("a");
        blockingQueue.put("b");
        blockingQueue.put("c");
         System.out.println("===============");
-       //blockingQueue.put("d");
+       blockingQueue.put("d");
 
        blockingQueue.take();
        blockingQueue.take();

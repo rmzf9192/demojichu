@@ -18,11 +18,8 @@ public class SpinLockDemo {
         System.out.println(Thread.currentThread().getName()+"\t come in ");
 
         while(!atomicReference.compareAndSet(null,thread)){
-
+//            System.out.println("有锁了");
         }
-
-
-
     }
     public  void unLock(){
         Thread thread=Thread.currentThread();

@@ -15,6 +15,7 @@ public class ContainerSetNotSafeDemo {
     public static void main(String[] args) {
         Set<String> hashSet = new CopyOnWriteArraySet<>();
 
+
         for(int i=1;i<30;i++){
             new Thread(()->{
                 hashSet.add(UUID.randomUUID().toString().substring(0,8));

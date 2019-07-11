@@ -1,5 +1,6 @@
 package com.el.jichu.quene;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -60,6 +61,7 @@ public class ProdConsumer_TraditionDemo {
             for (int i = 0; i < 5; i++) {
                 try{
                     shareData.increment();
+                    TimeUnit.SECONDS.sleep(3);
                 }catch (Exception e){
                     e.printStackTrace();
                 }
@@ -70,6 +72,7 @@ public class ProdConsumer_TraditionDemo {
             for (int i = 0; i < 5; i++) {
                 try {
                     shareData.decrement();
+                    TimeUnit.SECONDS.sleep(3);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

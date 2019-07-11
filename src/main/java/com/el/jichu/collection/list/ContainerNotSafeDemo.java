@@ -1,7 +1,10 @@
 package com.el.jichu.collection.list;
 
+import lombok.val;
+
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Auther: roman.zhang
@@ -12,10 +15,11 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 public class ContainerNotSafeDemo {
     public static void main(String[] args) {
-        //List<String> lists=Arrays.asList("a","b","c","d");
-        //List<String> lists=new ArrayList<>();
-        //List<String> lists=new Vector<>();
-       // List<String> lists=Collections.synchronizedList(new ArrayList<>());
+        System.out.println(Integer.MAX_VALUE);
+//        List<String> lists=Arrays.asList("a","b","c","d");
+//        List<String> lists=new ArrayList<>();
+//        List<String> lists=new Vector<>();
+//        List<String> lists=Collections.synchronizedList(new ArrayList<>());
         List<String> lists=new CopyOnWriteArrayList<>();
         /**
          * Collection:
@@ -24,9 +28,20 @@ public class ContainerNotSafeDemo {
         for (int i = 0; i <30 ; i++) {
             new Thread(()->{
                 lists.add(UUID.randomUUID().toString().substring(0,8));
-                //lists.forEach(System.out::println);
-                System.out.println(lists);
+//                lists.forEach(System.out::println);
+                System.out.println(Thread.currentThread().getName()+":"+lists);
             },String.valueOf(i)).start();
+        }
+
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Iterator<String> iterator = lists.iterator();
+        while (iterator.hasNext()){
+            boolean remove = lists.remove(iterator.next());
+            System.out.println(remove);
         }
         lists.forEach(System.out::println);
     }

@@ -23,6 +23,8 @@ public class CountDownLatchDemo {
         System.out.println(CountryEnum.ONE);
         System.out.println(CountryEnum.ONE.getRetCode());
         System.out.println(CountryEnum.ONE.getRetMessage());
+
+        closeDoor();
     }
 
     private static void closeDoor() throws InterruptedException {

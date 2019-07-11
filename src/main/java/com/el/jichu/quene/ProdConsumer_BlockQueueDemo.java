@@ -9,5 +9,11 @@ package com.el.jichu.quene;
 public class ProdConsumer_BlockQueueDemo {
     public static void main(String[] args) {
 
+        String str = "号";
+
+        if("号".equals(str)){
+            System.out.println("成功了");
+        }
+
     }
 }

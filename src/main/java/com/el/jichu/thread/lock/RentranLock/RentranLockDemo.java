@@ -37,7 +37,7 @@ class Phone implements Runnable{
     }
 }
 /**
- * @Auther: roman.zhang
+ * @auther roman.zhang
  * @Date: 2019/4/15 22:39
  * @Version:V1.0
  * @Description:RentranLockDemo

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class SemaphoreDemo {
     public static void main(String[] args) {
         Semaphore semaphore=new Semaphore(3);
-        for (int i = 0; i <6 ; i++) {
+        for (int i = 0; i <100; i++) {
             new Thread(()->{
                 try {
                     semaphore.acquire();

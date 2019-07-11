@@ -32,7 +32,7 @@ public class TestVolatile {
 
 class ThreadDemo implements Runnable {
 
-    private  boolean flag = false;
+    private volatile   boolean flag = false;
 
     @Override
     public void run() {
