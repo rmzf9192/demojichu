@@ -10,7 +10,7 @@ public class SparseArray {
 
     public static void main(String[] args) {
         //创建原始数据
-        int chessArr[][] = new int[11][11];
+        int chessArr[][] = new int[11][10];
 
         chessArr[1][2]=1;
         chessArr[2][3]=2;

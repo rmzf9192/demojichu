@@ -15,7 +15,8 @@ public class AddExpression extends SymbolExpression {
 
     @Override
     public int interpreter(HashMap<String,Integer> var){
-        super.left.interpreter(var);
+        System.out.println( super.left.interpreter(var));;
+        System.out.println( super.right.interpreter(var));;
         super.right.interpreter(var);
 
         return super.left.interpreter(var)+super.right.interpreter(var);

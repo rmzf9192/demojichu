@@ -4,7 +4,7 @@ package com.el.jichu.designpattern.state.test;
  * @author Roman.zhang
  * @Date: 2019/7/9 10:36
  * @Version:V1.0
- * @Description:NoRaffleState
+ * @Description:NoRaffleState  不能抽奖的状态
  */
 public class NoRaffleState extends State {
     RaffleActivity activity;

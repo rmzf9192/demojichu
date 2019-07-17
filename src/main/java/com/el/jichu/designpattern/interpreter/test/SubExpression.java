@@ -17,6 +17,8 @@ public class SubExpression extends SymbolExpression {
 
     @Override
     public int interpreter(HashMap<String,Integer> var){
+        System.out.println( super.left.interpreter(var));;
+        System.out.println( super.right.interpreter(var));;
         return super.left.interpreter(var)-super.right.interpreter(var);
     }
 }

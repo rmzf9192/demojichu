@@ -16,6 +16,7 @@ public class Calculator {
     public Calculator(String expStr) {
         Stack<Expression> stack = new Stack();
 
+
         char[] charArray = expStr.toCharArray();
 
         Expression left = null;
@@ -33,6 +34,10 @@ public class Calculator {
                     right = new VarExpression(String.valueOf(charArray[++i]));
                     stack.push(new SubExpression(left,right));
                     break;
+               /* case '*':
+                    left = stack.pop();
+                    right = new VarExpression(String.valueOf(charArray[++i]));
+                    stack.push(new mulityExpression(left,right));*/
                  default:
                      stack.push(new VarExpression(String.valueOf(charArray[i])));
                      break;

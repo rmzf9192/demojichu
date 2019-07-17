@@ -6,7 +6,7 @@ import java.util.Random;
  * @author Roman.zhang
  * @Date: 2019/7/9 10:41
  * @Version:V1.0
- * @Description:CanRaffleState
+ * @Description:CanRaffleState  可以抽奖的状态
  */
 public class CanRaffleState extends State {
     RaffleActivity activity;

@@ -4,7 +4,7 @@ package com.el.jichu.designpattern.state.test;
  * @author Roman.zhang
  * @Date: 2019/7/9 10:45
  * @Version:V1.0
- * @Description:DispenseOutState
+ * @Description:DispenseOutState 奖品发放完的状态
  */
 public class DispenseOutState extends State {
     RaffleActivity activity;

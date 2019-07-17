@@ -8,7 +8,7 @@ package com.el.jichu.designpattern.responsibilityofchain.test;
  */
 public class Client {
     public static void main(String[] args) {
-        PurchaseRequest purchaseRequest = new PurchaseRequest(1, 6000, 1);
+        PurchaseRequest purchaseRequest = new PurchaseRequest(1, 5000, 1);
 
         DepartmentApprover departmentApprover = new DepartmentApprover("张主任");
         CollegeApprover collegeApprover = new CollegeApprover("李院长");
@@ -23,6 +23,6 @@ public class Client {
 
 
         departmentApprover.processRequest(purchaseRequest);
-        //viceSchoolMasterApprover.processRequest(purchaseRequest);
+        viceSchoolMasterApprover.processRequest(purchaseRequest);
     }
 }
