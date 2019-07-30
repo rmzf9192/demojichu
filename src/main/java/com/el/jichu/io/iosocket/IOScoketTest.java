@@ -1,4 +1,3 @@
-/*
 package com.el.jichu.io.iosocket;
 
 import lombok.extern.slf4j.Slf4j;
@@ -6,23 +5,24 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.Executors;
 
-*/
 /**
  * @Auther: roman.zhang
  * @Date: 2019/4/9 11:24
  * @Version:V1.0
  * @Description:IOScoketTest
  *   服务端源码
- *//*
+ *
+ */
 
 //@Slf4j
 public class IOScoketTest {
     //默认端口号
-    private static int DEFAULT_PORT=8100;
-
+    private static int DEFAULT_PORT=8080;
     //传入单实例ServerSocket
     private static ServerSocket serverSocket;
+
     //根据传入参数设置监听端口，如果没有，则使用默认端口
     public static void start() throws IOException {
         //使用默认
@@ -37,11 +37,10 @@ public class IOScoketTest {
             serverSocket=new ServerSocket(port);
             System.out.println("服务器已启动，端口:"+port);
 
-            //通过无线循环监听，如果没有则阻塞
+            //通过无限循环监听，如果没有则阻塞
             while(true){
                 Socket accept = serverSocket.accept();
                 //如果有新的客户端过来，则开启新的线程
-
                 new Thread(new ServerHandler(accept)).start();
             }
 
@@ -57,4 +56,3 @@ public class IOScoketTest {
         }
     }
 }
-*/
