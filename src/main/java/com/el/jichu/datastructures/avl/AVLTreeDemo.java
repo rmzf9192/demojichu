@@ -17,7 +17,6 @@ public class AVLTreeDemo {
         for(int i=0; i < arr.length; i++) {
             avlTree.add(new Node(arr[i]));
         }
-
         //遍历
         System.out.println("中序遍历");
         avlTree.infixOrder();
