@@ -64,6 +64,7 @@ public class TestAnnotation {
         //静态加载类
         Class<?> cla = Class.forName("com.el.jichu.annotation.Student");
 
+        boolean annotation = cla.isAnnotation();
         //判断该类是否加了注解
         boolean b = cla.isAnnotationPresent(MyAnnotation.class);
         if(b){
