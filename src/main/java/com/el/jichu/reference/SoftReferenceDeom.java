@@ -37,7 +37,7 @@ public class SoftReferenceDeom {
 
     }
     public static void main(String[] args) {
-//        softRef_NotEnough();
-        softRef_Enough();
+        softRef_NotEnough();
+//        softRef_Enough();
     }
 }

@@ -10,6 +10,14 @@ import java.util.*;
 
 public class LambdaTest1 {
 
+    @Test
+    public void test1(){
+        //无参数，无返回值
+        Runnable runnable = () -> System.out.println("hello");
+        runnable.run();
+    }
+
+
     //使用匿名函数
     @Test
     public void test() {
@@ -21,7 +29,7 @@ public class LambdaTest1 {
             }
         };
         TreeSet<String> treeSet = new TreeSet<>(comparator);
-        treeSet.comparator().compare("jjjj", "pppp");
+        System.out.println(treeSet.comparator().compare("jjjj", "pppp"));
 
         System.out.println(comparator.compare("hasd", "jjsha") + ",," + treeSet);
         TreeSet<String> treeSet1 = new TreeSet<>(new Comparator<String>() {
@@ -167,6 +175,8 @@ public class LambdaTest1 {
                 .map(Employee::getSalary)
                 .limit(3)
                 .forEach(System.out::println);
+        System.out.println("---------------------------");
+        emps.stream().distinct();
     }
 
 }

@@ -20,6 +20,9 @@ public class LambdaTest2 {
         };
         runnable.run();
         System.out.println("-----------------------");
+
+        Runnable runnable1 = ()-> System.out.println("Runnable is running ");
+        runnable1.run();
     }
 
     @Test

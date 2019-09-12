@@ -186,7 +186,8 @@ public class TestChannel {
         long l = System.currentTimeMillis();
         try (
                 //创建输入输出流
-                FileInputStream fis = new FileInputStream("E:\\study\\aduc.zip");
+//                FileInputStream fis = new FileInputStream("E:\\study\\aduc.zip");
+                FileInputStream fis = new FileInputStream("E:\\study\\1.txt");
                 FileOutputStream fos = new FileOutputStream("E:\\study\\1.zip");
                 //创建通道
                 FileChannel inChannel = fis.getChannel();
@@ -201,6 +202,7 @@ public class TestChannel {
                 allocate.flip();
                 //将缓冲区的数据写入通道中。
                 outChannel.write(allocate);
+                System.out.println(new String(allocate.array(),0,allocate.limit()));
                 //清空缓冲区
                 allocate.clear();
             }

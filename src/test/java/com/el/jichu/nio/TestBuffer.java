@@ -3,6 +3,8 @@ package com.el.jichu.nio;
 import lombok.val;
 import org.junit.Test;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
 
 /**
@@ -103,9 +105,9 @@ public class TestBuffer {
         //4.利用get()读取数据
         byte[] bytes = new byte[byteBuffer.limit()];
         byteBuffer.get(bytes);
-        for (val b : bytes) {
+      /*  for (val b : bytes) {
             System.out.println("byte数组：" + b);
-        }
+        }*/
         System.out.println(new String(bytes, 0, bytes.length));
         System.out.println("==========get()============");
         System.out.println("缓冲区容量：" + byteBuffer.capacity());
@@ -131,17 +133,23 @@ public class TestBuffer {
         //7.再次利用get()读取数据
         byte[] bytes1 = new byte[byteBuffer.limit()];
         byteBuffer.get(bytes1);
-        for (val b : bytes1) {
+       /* for (val b : bytes1) {
             System.out.println("byte数组：" + b);
-        }
+        }*/
         System.out.println(new String(bytes1, 0, bytes1.length));
     }
 
     @Test
-    public void test01(){
+    public void test01() throws UnknownHostException {
         String jjj = String.format("%12s", "jjj");
 
         System.out.println(jjj.length());
+        InetAddress inetAddress = InetAddress.getLocalHost();
+
+        System.out.println(inetAddress.getHostAddress());
+        System.out.println(inetAddress.getHostName());
+
+
     }
 
 }

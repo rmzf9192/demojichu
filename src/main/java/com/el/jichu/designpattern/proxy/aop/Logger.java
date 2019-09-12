@@ -16,10 +16,10 @@ import static sun.util.locale.provider.LocaleProviderAdapter.Type.JRE;
  */
 public class Logger {
     public static  void start(){
-        System.out.println(LocalDateTime.now() +"Logger start is runing");
+        System.out.println(LocalDateTime.now() +" Logger start is runing");
     }
     public static void end(){
-        System.out.println(LocalDateTime.now()+"LOgger start is runing");
+        System.out.println(LocalDateTime.now()+" Logger start is runing");
     }
 
 }
