@@ -23,15 +23,15 @@ public class PolandNotation {
 
         int calculate = calculate(list);
         System.out.println("calculate:"+calculate);
-        /* // 逆波兰排序
+         // 逆波兰排序
 
         String suffixExpression = "4 5 * 8 - 60 + 8 2 / +"; // 76
-        List<String> list =  getStringList(suffixExpression);
+        List<String> list1 =  getStringList(suffixExpression);
 
-        System.out.println("逆波兰排序："+list);
-        int calculate = calculate(list);
+        System.out.println("逆波兰排序："+list1);
+        int calculate1 = calculate(list1);
 
-        System.out.printf("值为：%d\n",calculate);*/
+        System.out.printf("值为：%d\n",calculate1);
     }
     //即 ArrayList [1,+,(,(,2,+,3,),*,4,),-,5]  =》 ArrayList [1,2,3,+,4,*,+,5,–]
     //方法：将得到的中缀表达式对应的List => 后缀表达式对应的List

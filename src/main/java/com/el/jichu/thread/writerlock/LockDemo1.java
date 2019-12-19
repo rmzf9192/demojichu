@@ -3,6 +3,7 @@ package com.el.jichu.thread.writerlock;
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -52,7 +53,7 @@ public class LockDemo1 {
             lock.unlock();
         }*/
         //i++;
-       //atomicInteger.getAndIncrement();
+       //atomicInteger.getAndIncrement(); //执行参数 -XX:+PrintCommandLineFlags -version
     }
 
     public static void main(String[] args) throws InterruptedException {

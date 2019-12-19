@@ -9,12 +9,12 @@ package com.el.jichu.designpattern.adapter;
 public class AdapterTest {
 
     public static void main(String[] args) {
-      /*
+
       //类的适配器
       Targetable adapter= new Adapter();
-        adapter.method1();
-        adapter.method2();
-        */
+      adapter.method1();
+      adapter.method2();
+
         //对象适配器
         Source source = new Source();
         Targetable targetable = new Wrapper(source);

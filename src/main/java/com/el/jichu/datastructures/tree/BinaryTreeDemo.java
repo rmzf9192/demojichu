@@ -36,9 +36,9 @@ public class BinaryTreeDemo {
         //前序遍历
         System.out.println("前序遍历");
         binaryTree.preOrder();
-
+        System.out.println("中序遍历");
         binaryTree.infixOrder();
-
+        System.out.println("后序遍历");
         binaryTree.postOrder();
 
      /*   System.out.println("前序遍历查找");

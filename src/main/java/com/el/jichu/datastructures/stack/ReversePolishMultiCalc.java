@@ -96,25 +96,22 @@ public class ReversePolishMultiCalc {
         for (int i = 0; i < s.length(); i++) {
             if(isSymbol(s.charAt(i)+"")){
                 each = s.charAt(i)+"";
-                //栈为空（操作符，或者操作符优先级大于栈顶优先级 &&
-                // 操作符优先级不是（）的优先级及是）不能直接入栈）
-
-                if(stack.isEmpty() || LEFT.equals(each)||((calLevel(each)>calLevel(stack.peek())))
-                        &&calLevel(each) < LEVEL_HIGH){
+                //栈为空，(操作符，或者 操作符优先级大于栈顶优先级 && 操作符优先级不是( )的优先级 及是 ) 不能直接入栈
+                if(stack.isEmpty() || LEFT.equals(each)
+                        || ((calLevel(each) > calLevel(stack.peek())) && calLevel(each) < LEVEL_HIGH)){
                     stack.push(each);
-                }else if (!stack.isEmpty() && calLevel(each) <= calLevel(stack.peek())){
-                    //栈非空，操作符优先级小于等于栈顶优先级时出栈，知道栈为空，或者遇到了( ,最后操作符入栈
-
-                    while(!stack.isEmpty() && calLevel(each) <= calLevel(stack.peek())){
-                        if(calLevel(each) == LEVEL_HIGH){
+                }else if( !stack.isEmpty() && calLevel(each) <= calLevel(stack.peek())){
+                    //栈非空，操作符优先级小于等于栈顶优先级时出栈入列，直到栈为空，或者遇到了(，最后操作符入栈
+                    while (!stack.isEmpty() && calLevel(each) <= calLevel(stack.peek()) ){
+                        if(calLevel(stack.peek()) == LEVEL_HIGH){
                             break;
                         }
                         data.add(stack.pop());
                     }
                     stack.push(each);
-                }else if(RIGHT.equals(each)) {
-                    // )操作符，依次出栈入列知道空栈或者遇到了第一个）操作符，此时）出栈
-                    while(!stack.isEmpty() && LEVEL_HIGH >= calLevel(stack.peek())){
+                }else if(RIGHT.equals(each)){
+                    // ) 操作符，依次出栈入列直到空栈或者遇到了第一个)操作符，此时)出栈
+                    while (!stack.isEmpty() && LEVEL_HIGH >= calLevel(stack.peek())){
                         if(LEVEL_HIGH == calLevel(stack.peek())){
                             stack.pop();
                             break;
@@ -122,11 +119,10 @@ public class ReversePolishMultiCalc {
                         data.add(stack.pop());
                     }
                 }
-                start = i ;  //前一个运算符的位置
-            }else if (i == s.length()-1 || isSymbol(s.charAt(i+1)+"")){
-                each = start == 0 ? s.substring(start,i+1):s.substring(start+1,i+1);
-
-                if(isNumber(each)){
+                start = i ;    //前一个运算符的位置
+            }else if( i == s.length()-1 || isSymbol(s.charAt(i+1)+"") ){
+                each = start == 0 ? s.substring(start,i+1) : s.substring(start+1,i+1);
+                if(isNumber(each)) {
                     data.add(each);
                     continue;
                 }
@@ -170,8 +166,8 @@ public class ReversePolishMultiCalc {
 
                 list1.remove(i);
                 list1.remove(i-1);
-                list.set(i-2,d1+"");
-                list.addAll(list.subList(i+1,list.size()));
+                list1.set(i-2,d1+"");
+                list1.addAll(list.subList(i+1,list.size()));
                 break;
             }
         }
@@ -193,12 +189,12 @@ public class ReversePolishMultiCalc {
     }
 
     public static void main(String[] args) {
-       // String math = "12.8 + (2-3.55)*4+10/5.0";
-        String math = "9+1";
+        String math = "12.8 + (2-3.55)*4+10/5.0";
+//        String math = "9+1";
 
-        Double aDouble = doCale(doMatch(math));
+       doCale(doMatch(math));
 
-        System.out.println("计算的值为："+aDouble);
+//        System.out.println("计算的值为："+aDouble);
     }
 }
 

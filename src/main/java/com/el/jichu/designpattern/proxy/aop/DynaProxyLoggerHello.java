@@ -30,7 +30,7 @@ public class DynaProxyLoggerHello implements InvocationHandler {
         //通过实例执行方法
         Method start = aClass.getDeclaredMethod("start", new Class[]{Method.class});
         //反射执行start方法
-        start.invoke(this.proxy,new Object[]{method});
+        start.invoke(this.proxy,new Object[]{start});
         //反射执行原来的方法
         result=method.invoke(this.object,args);
         //通过实例获取执行方法

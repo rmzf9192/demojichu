@@ -11,7 +11,7 @@ public class MyRunnable implements Runnable {
     }
 
     public static void main(String[] agrs) {
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 1; i++) {
             System.out.println(Thread.currentThread().getName() + ",,,," + i);
             Thread.currentThread().setPriority(1);
             MyRunnable myRunnable = new MyRunnable();

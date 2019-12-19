@@ -12,13 +12,13 @@ import java.util.Arrays;
  */
 public class InsertSort {
     public static void main(String[] args) {
-        int[] arr = {101, 34, 119, 1, -1, 89,-3};
+//        int[] arr = {101, 34, 119, 1, -1, 89,-3};
 
-     /*   int[] arr = new int[80000];
+        int[] arr = new int[80000];
 
         for (int i = 0; i < 80000; i++) {
             arr[i] = (int) (Math.random()*8000);
-        }*/
+        }
         LocalTime start = LocalDateTime.now().toLocalTime();
         System.out.println("排序前的时间："+start);
         insertSort(arr);
@@ -38,11 +38,11 @@ public class InsertSort {
                 insertIndex -- ;
             }
             arr[insertIndex + 1] = insertVal;
-            System.out.println("第"+i+"次插入后");
-            System.out.println(Arrays.toString(arr));
+           /* System.out.println("第"+i+"次插入后");
+            System.out.println(Arrays.toString(arr));*/
         }
 
-      /*  //定义待插入的数
+       /* //定义待插入的数
         int insertVal = arr[1];
 
         int insertIndex = 1-1;

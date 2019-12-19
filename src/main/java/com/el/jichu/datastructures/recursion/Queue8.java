@@ -22,19 +22,25 @@ public class Queue8 {
         int sum = (end+1)*end/2;
         System.out.println(sum);
         for (int i = 0; i <= end; i++) {
-           /* total += (1+end)*end/2;*/
+            total += (1+end)*end/2;
             total +=i;
         }
         System.out.println(total);
         long endt = LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8"));
         System.out.println(endt - start);
-     /*   Queue8 queue8 = new Queue8();
+        Queue8 queue8 = new Queue8();
         queue8.check(0);
         System.out.printf("一共有%d解法", count);
-        System.out.printf("一共判断冲突的次数%d次", judgeCount); // 1.5w*/
+        System.out.printf("一共判断冲突的次数%d次", judgeCount); // 1.5w
     }
 
+    /**
+     * 放置第n个皇后：特别注意
+     *    check每次递归时，进入到check中都有for(int i=0;i < max;i++),因此会有回溯
+     * @param n
+     */
     private void check(int n) {
+        // 8个皇后都已经放好
         if (n == max){
             print();
             return;
@@ -43,12 +49,20 @@ public class Queue8 {
         for (int i = 0; i < max; i++) {
             //先把皇后放第一个位置
             array[n] = i;
+            //判断是否冲突
             if(judge(n)){
+                // 不冲突 ，接着放n+1个皇后，即开始递归
                 check(n+1);
             }
+            // 如果冲突，继续执行array[n],即将皇后放在本行的位置后移一位
         }
     }
 
+    /**
+     * 查看下，当我们摆放第n个皇后的位置时，是否与前面已摆放的皇后的位置相冲突
+     * @param n
+     * @return
+     */
     private boolean judge(int n) {
         judgeCount++;
         for (int i = 0; i < n; i++) {
@@ -66,6 +80,9 @@ public class Queue8 {
         return true;
     }
 
+    /**
+     * 输出皇后所摆放的位置
+     */
     private void print() {
         count++;
         for (int i = 0; i < array.length; i++) {

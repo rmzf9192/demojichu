@@ -18,7 +18,7 @@ public class ShellSort {
         int[] arr = new int[8000000];
 
         for (int i = 0; i < 8000000; i++) {
-            arr[i] = (int) (Math.random()*8000);
+            arr[i] = (int) (Math.random()*8000000);
         }
         LocalTime start = LocalDateTime.now().toLocalTime();
         System.out.println("排序前的时间："+start);

@@ -34,7 +34,7 @@ public class TestThreadPool {
 
         List<Future<Integer>> asList = new ArrayList();
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             Future<Integer> future = threadPool.submit(new Callable<Integer>() {
                 @Override
                 public Integer call() throws Exception {

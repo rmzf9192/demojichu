@@ -1,8 +1,10 @@
 package com.el.jichu.collection.list;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import sun.applet.resources.MsgAppletViewer;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 /**
  * @author Roman.zhang
@@ -12,6 +14,22 @@ import java.util.List;
  */
 public class TestList {
     public static void main(String[] args) {
+        System.out.println("001".compareTo("001"));
+        String time1 = "2019-11-22 13:50:59";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        LocalDateTime localDateTime = LocalDateTime.parse(time1, formatter);
+
+        System.out.println(localDateTime.isAfter(LocalDateTime.now()));
+
+        List list = new ArrayList();
+
+        System.out.println("list size "+list.size());
+        Map<String,String> strMap = new HashMap<>();
+
+        strMap.put("1","222");
+        strMap.put("1","3333");
+
         List<Integer> lists = new ArrayList<>();
         lists.add(1);
         lists.add(2);

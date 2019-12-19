@@ -9,7 +9,7 @@ package com.el.jichu.datastructures.stack;
 public class Calculator {
     public static void main(String[] args) {
         //String expression = "7*2*2-5+1-5+3-4";
-        String expression = "3+2*6-2";
+        String expression = "13+2*6-2";
 
         //创建两个栈
         //数字栈

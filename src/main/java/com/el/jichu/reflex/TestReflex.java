@@ -23,12 +23,21 @@ public class TestReflex {
         Method method1 = aClass.getMethod("setAge", Integer.class);
         Object o = aClass.newInstance();
         Constructor constructor = aClass.getConstructor();
+        System.out.println("o:"+o);
         Object instance = constructor.newInstance();
+        System.out.println(instance);
         method.invoke(instance, "lisi");
         method1.invoke(instance, 23);
         Object zhangsan = method.invoke(o, "zhangsan");
         Object invoke = method1.invoke(o, 23);
+        System.out.println("o:"+o);
         System.out.println("Person:" + instance);
+        int i = 0;
+        String  str = "world";
+        while(true){
+            str = str +i;
+            System.out.println("hello");
+        }
     }
 }
 

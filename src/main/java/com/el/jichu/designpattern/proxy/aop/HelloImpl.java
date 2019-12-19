@@ -11,6 +11,10 @@ public class HelloImpl  extends Hello{
         System.out.println("吱吱");
     }
 
+    public void test(){
+        System.out.println("测试");
+    }
+
     public static void main(String[] args) {
         Hello hello = new HelloImpl();
 

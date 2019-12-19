@@ -81,7 +81,7 @@ public class BubbleSort {
                     arr[i+1] = temp;
                 }
             }
-          /*  System.out.println("第"+(j+1)+"趟排序后");
+         /*   System.out.println("第"+(j+1)+"趟排序后");
             System.out.println(Arrays.toString(arr));*/
             if(flag){
                 break;

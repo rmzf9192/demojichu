@@ -12,7 +12,7 @@ public class SingleonDemo {
         System.out.println(Thread.currentThread().getName()+"\t 我是构造方法的SingleonDemo()");
     }
 
-    //DCL Double Check Lock双端检锁机制
+    //   DCL Double Check Lock双端检锁机制
     public static SingleonDemo getInstance(){
         if(instance==null){
             synchronized (SingleonDemo.class){

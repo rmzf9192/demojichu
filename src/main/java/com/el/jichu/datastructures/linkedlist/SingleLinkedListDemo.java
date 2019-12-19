@@ -130,11 +130,16 @@ public class SingleLinkedListDemo {
         HeroNode newNode = new HeroNode(0, "", "");
 
         while(null != cur){
+            //先暂时保存当前节点的下一个节点
             next = cur.next;
+            //将cur的下一个节点，放在新链表的最前端
             cur.next = newNode.next;
+            //将cur连接到新的链表
             newNode.next = cur;
+            //让cur后移
             cur = next;
         }
+        //heroNode.next 指向newNode.next
         heroNode.next = newNode.next;
       return   newNode.next;
     }

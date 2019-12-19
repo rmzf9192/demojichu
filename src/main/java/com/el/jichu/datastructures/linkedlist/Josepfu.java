@@ -13,12 +13,12 @@ class CircleSingleLinkedList{
     public static void main(String[] args) {
 
         CircleSingleLinked circleSingleLinked = new CircleSingleLinked();
-        circleSingleLinked.createCircleBoy(125);
+        circleSingleLinked.createCircleBoy(5);
 
         System.out.println("遍历当前单向链表");
         circleSingleLinked.list();
         System.out.println("小孩子出圈顺序"); //2->4->1->5->3
-        circleSingleLinked.countBoy(10,20,125);
+        circleSingleLinked.countBoy(1,2,5);
     }
 }
 

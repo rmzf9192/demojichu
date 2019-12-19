@@ -12,13 +12,13 @@ import java.util.Arrays;
  */
 public class MergeSort {
     public static void main(String[] args) {
-//        int arr[] = { 8, 4, 5, 7, 1, 3, 6, 2 };
+        int arr[] = { 8, 4, 5, 7, 1, 3, 6, 2 };
         //归并排序需要一个额外空间
-        int[] arr = new int[8000000];
+        /*int[] arr = new int[8000000];
 
         for (int i = 0; i < 8000000; i++) {
             arr[i] = (int) (Math.random()*8000);
-        }
+        }*/
         LocalTime start = LocalDateTime.now().toLocalTime();
         System.out.println("排序前的时间："+start);
         int temp[] = new int[arr.length];

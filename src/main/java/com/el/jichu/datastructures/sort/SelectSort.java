@@ -31,6 +31,7 @@ public class SelectSort {
             int minIndex = i;
             int min = arr[i];
             for (int j = 1+i; j < arr.length; j++) {
+                // > :从小到大  <:从大到小
                 if(min < arr[j]){
                     minIndex = j;
                     min = arr[j];
@@ -40,7 +41,7 @@ public class SelectSort {
                 arr[minIndex] = arr[i];
                 arr[i] = min;
             }
-           /* System.out.println("第"+(i+1)+"轮后~~");
+         /*   System.out.println("第"+(i+1)+"轮后~~");
             System.out.println(Arrays.toString(arr));// [-1, 34, 119, 1, 101, 90, 123]*/
         }
 

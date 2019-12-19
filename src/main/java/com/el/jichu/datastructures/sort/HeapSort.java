@@ -14,13 +14,13 @@ import java.util.Arrays;
 public class HeapSort {
     public static void main(String[] args) {
 //要求将数组进行升序排序
-//        int arr[] = {4, 6, 8, 5, 9};
+        int arr[] = {4, 6, 8, 5, 9};
         // 创建要给80000个的随机的数组
-        int[] arr = new int[8000000];
+      /*  int[] arr = new int[8000000];
         for (int i = 0; i < 8000000; i++) {
             arr[i] = (int) (Math.random() * 8000000); // 生成一个[0, 8000000) 数
         }
-
+*/
         System.out.println("排序前");
         LocalTime start = LocalDateTime.now().toLocalTime();
         System.out.println("排序前的时间："+start);
@@ -29,7 +29,7 @@ public class HeapSort {
 
         LocalTime end = LocalDateTime.now().toLocalTime();
         System.out.println("排序后的时间："+end);
-//        System.out.println("排序后=" + Arrays.toString(arr));
+        System.out.println("排序后=" + Arrays.toString(arr));
     }
 
     //编写一个堆排序的方法
@@ -43,7 +43,7 @@ public class HeapSort {
         adjustHeap(arr,0,arr.length);
         System.out.println("第二次排序"+Arrays.toString(arr));//9, 6, 8, 5, 4*/
 
-       //将无序序列构成一个堆，根据升序选择大顶堆，降序选择小顶堆
+       // 将无序序列构成一个堆，根据升序选择大顶堆，降序选择小顶堆
         int count = 0;
         for (int i = arr.length/2; i >= 0 ; i--) {
             adjustHeap(arr,i,arr.length);

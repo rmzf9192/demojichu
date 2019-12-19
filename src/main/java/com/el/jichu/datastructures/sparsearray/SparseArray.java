@@ -34,7 +34,7 @@ public class SparseArray {
         System.out.println("length:"+length);
 
         //2.将二维数组转为稀疏数组
-        //第一步：先遍历数组，获取不为的数据
+        //第一步：先遍历数组，获取不为0的数据
         int sum=0;
         for (int i = 0; i <chessArr.length ; i++) {
             for (int j = 0; j <chessArr[0].length ; j++) {

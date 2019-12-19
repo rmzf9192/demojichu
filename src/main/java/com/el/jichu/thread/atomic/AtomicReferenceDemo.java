@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
 
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
@@ -21,6 +22,10 @@ class User{
 }
 public class AtomicReferenceDemo {
     public static void main(String[] args) {
+        AtomicBoolean atomicBoolean = new AtomicBoolean();
+
+        atomicBoolean.set(true);
+
         User z3 = new User("z3", 22);
         User li4 = new User("li4", 23);
         AtomicReference<User> atomicReferenceDemo = new AtomicReference<>();

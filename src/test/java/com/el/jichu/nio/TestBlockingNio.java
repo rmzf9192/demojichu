@@ -37,7 +37,7 @@ public class TestBlockingNio {
     @Test
     public void testClient() throws IOException {
         //获取通道
-        SocketChannel socketChannel = SocketChannel.open(new InetSocketAddress("127.0.0.1", 9898));
+        SocketChannel socketChannel = SocketChannel.open(new InetSocketAddress("10.17.86.214", 9898));
 
         //获取读通道
         FileChannel inChannel = FileChannel.open(Paths.get("E:\\study\\aduc.zip"), StandardOpenOption.READ);

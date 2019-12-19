@@ -1,5 +1,6 @@
 package com.el.jichu.thread.cas;
 
+import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -10,10 +11,12 @@ import java.util.concurrent.atomic.AtomicInteger;
  *  CAS:比较并交换
  */
 public class CASDemo {
-
+    final   String[] str = null;
     public static void main(String[] args) {
         AtomicInteger atomicInteger = new AtomicInteger(5);
         System.out.println(atomicInteger.compareAndSet(5,2019)+"\t current data:"+atomicInteger.get());
         System.out.println(atomicInteger.compareAndSet(5,2014)+"\t current data:"+atomicInteger.get());
     }
+
+
 }

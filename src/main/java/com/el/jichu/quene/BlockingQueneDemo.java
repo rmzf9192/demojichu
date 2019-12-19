@@ -21,7 +21,7 @@ public class BlockingQueneDemo {
         List list=null;
         BlockingQueue<String> blockingQueue=new ArrayBlockingQueue<>(3);
 
-      /*  System.out.println(blockingQueue.add("a"));
+       /* System.out.println(blockingQueue.add("a"));
         System.out.println(blockingQueue.add("b"));
         System.out.println(blockingQueue.add("c"));
         System.out.println(blockingQueue.add("d"));
@@ -31,7 +31,7 @@ public class BlockingQueneDemo {
         System.out.println( blockingQueue.remove());
         System.out.println( blockingQueue.remove());
         System.out.println( blockingQueue.remove());*/
-       /* System.out.println(blockingQueue.offer("a"));
+      /*  System.out.println(blockingQueue.offer("a"));
         System.out.println(blockingQueue.offer("b"));
         System.out.println(blockingQueue.offer("c"));
         System.out.println(blockingQueue.offer("d"));
@@ -42,7 +42,7 @@ public class BlockingQueneDemo {
         System.out.println(blockingQueue.poll());
         System.out.println(blockingQueue.poll());
         System.out.println(blockingQueue.poll());*/
-      /*  for (int i = 0; i <4 ; i++) {
+    /*    for (int i = 0; i <4 ; i++) {
             new Thread(()->{
                 try {
                     blockingQueue.put("a");

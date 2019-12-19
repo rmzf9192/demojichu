@@ -49,11 +49,18 @@ public class TestOptional {
 
     @Test
     public void test2() {
-		/*Optional<Employee> op = Optional.ofNullable(null);
+        String str = null;
+        Integer integer = Optional.ofNullable(str).map(String::length).orElse(0);
+
+        System.out.println("size:"+integer);
+
+        Optional<Employee> op = Optional.ofNullable(null);
+		System.out.println(op.get());
+/*
+		Optional<Employee> op = Optional.empty();
 		System.out.println(op.get());*/
 
-//		Optional<Employee> op = Optional.empty();
-//		System.out.println(op.get());
+
     }
 
     @Test
