@@ -40,8 +40,8 @@ public class BinarySortTreeDemo {
         binarySortTree.delNode(3);
 
         binarySortTree.delNode(9);*/
-        binarySortTree.delNode(1);
-//        binarySortTree.delNode(7);
+//        binarySortTree.delNode(1);
+        binarySortTree.delNode(7);
 
         System.out.println("root=" + binarySortTree.getRoot());
 

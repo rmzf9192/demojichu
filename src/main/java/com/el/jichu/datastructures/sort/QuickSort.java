@@ -12,12 +12,12 @@ import java.util.Arrays;
  */
 public class QuickSort {
     public static void main(String[] args) {
-//        int[] arr = {-9,78,0,23,-567,70, -1,900, 4561};
-        int[] arr = new int[8000000];
+        int[] arr = {-9,78,0,23,-567,70, -1,900, 4561};
+       /* int[] arr = new int[8000000];
 
         for (int i = 0; i < 8000000; i++) {
             arr[i] = (int) (Math.random()*8000);
-        }
+        }*/
         LocalTime start = LocalDateTime.now().toLocalTime();
         System.out.println("排序前的时间："+start);
         quickSort(arr,0,arr.length -1);

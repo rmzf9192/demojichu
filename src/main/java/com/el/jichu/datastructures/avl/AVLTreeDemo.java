@@ -221,7 +221,7 @@ class Node{
     public void rightRoate(){
         Node newNode = new Node(value);
         newNode.right = right;
-        newNode.left = right.left;
+        newNode.left = left.right;
         value = left.value;
         left = left.left;
         right = newNode;
