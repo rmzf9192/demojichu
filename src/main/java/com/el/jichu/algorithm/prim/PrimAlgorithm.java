@@ -86,13 +86,15 @@ class MinTree{
         //将minWeight设置为较大值，在后面遍历时，会被替换
         int minWeight = 10000;
 
+        //根据普利姆算法知，根据verxs得到graph.verxs - 1条边
         for (int k = 1; k < graph.verxs; k++) {
-            //根据普利姆算法知，根据verxs得到graph.verxs - 1条边
 
-            for (int i = 0; i < graph.verxs; i++) {
-                //确定每生成一个子图，所得到的边的值最小
-                for (int j = 0; j < graph.verxs; j++) {
+            //确定每生成一个子图，和那个节点的距离最小
+            for (int i = 0; i < graph.verxs; i++) {//i节点表示被访问过的节点
+
+                for (int j = 0; j < graph.verxs; j++) {//j节点表示未访问过的节点
                     if(visited[i] == 1 && visited[j] == 0 && graph.weight[i][j] < minWeight){
+                        //替换minWeight(寻找已经访问的节点与未被访问的节点的权值的最小边)
                         minWeight = graph.weight[i][j];
                         h1 = i;
                         h2 = j;
