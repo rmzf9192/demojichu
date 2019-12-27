@@ -13,9 +13,11 @@ import lombok.RequiredArgsConstructor;
  */
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class Person {
     private String name;
     private Integer age;
 
+    public Person() {
+        System.out.println("hello");
+    }
 }

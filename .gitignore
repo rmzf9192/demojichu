@@ -8,6 +8,7 @@
 out
 gen
 dump.hprof
+target
 src/main/java/com/el/jichu/collection/map/
 src/main/java/com/el/jichu/designpattern/factorymethod/moreMethod/
 target/generated-sources/

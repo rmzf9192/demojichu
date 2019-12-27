@@ -34,10 +34,10 @@ public class TestReflex {
         System.out.println("Person:" + instance);
         int i = 0;
         String  str = "world";
-        while(true){
+       /* while(true){
             str = str +i;
             System.out.println("hello");
-        }
+        }*/
     }
 }
 
