@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35d2b08c-e9c7-4c71-ba09-b7dcc2df326c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/bio/BioTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/GroupChatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/GroupChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/MapperByteBufferTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NIOClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NIOServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NewIOClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NewIoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/net/URLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/net/URLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/simple/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/simple/NettyClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/simple/NettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/simple/NettyServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/simple/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="902d2360-7453-4d55-b4c6-b260ec5c04f9" name="Revert &quot;测试&quot;" comment="Revert &quot;测试&quot;" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,13 +54,13 @@
     <property name="last_opened_file_path" value="F:/study/java学习/网络/尚硅谷Netty笔记源码资料等2个文件/尚硅谷Netty笔记源码资料/代码/NettyPro" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.NewIOClient">
-    <configuration name="GroupChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.nio.GroupChatClient" />
+  <component name="RunManager" selected="Application.NettyClient">
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.netty.simple.NettyClient" />
       <module name="demojichu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.el.jichu.io.netty.nio.*" />
+          <option name="PATTERN" value="com.el.jichu.io.netty.netty.simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.nio.GroupChatServer" />
+    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.netty.simple.NettyServer" />
       <module name="demojichu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.el.jichu.io.netty.nio.*" />
+          <option name="PATTERN" value="com.el.jichu.io.netty.netty.simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,29 +107,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBlockingNio2.clientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.netty.simple.Test" />
       <module name="demojichu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.el.jichu.nio.*" />
+          <option name="PATTERN" value="com.el.jichu.io.netty.netty.simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.el.jichu.nio" />
-      <option name="MAIN_CLASS_NAME" value="com.el.jichu.nio.TestBlockingNio2" />
-      <option name="METHOD_NAME" value="clientTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NettyClient" />
+        <item itemvalue="Application.NettyServer" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.NewIOClient" />
         <item itemvalue="Application.NewIoServer" />
-        <item itemvalue="Application.GroupChatClient" />
-        <item itemvalue="Application.GroupChatServer" />
-        <item itemvalue="JUnit.TestBlockingNio2.clientTest" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +167,7 @@
       <workItem from="1577343517216" duration="8583000" />
       <workItem from="1577365534537" duration="148000" />
       <workItem from="1577406766595" duration="26764000" />
-      <workItem from="1577672738083" duration="8270000" />
+      <workItem from="1577672738083" duration="11682000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1576756972428</created>
@@ -226,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577425644530</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Netty 入门- bio,nio,aio">
+      <created>1577690240830</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577690240830</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,21 +251,22 @@
     <MESSAGE value="普利姆算法添加注释" />
     <MESSAGE value="添加对应代码" />
     <MESSAGE value="添加网络编程方面的代码示例" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加网络编程方面的代码示例" />
+    <MESSAGE value="Netty 入门- bio,nio,aio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Netty 入门- bio,nio,aio" />
   </component>
   <component name="WindowStateProjectService">
     <state x="505" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576757047622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="505" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1576757047622" />
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1577439076892">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1577692898655">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577439076892" />
-    <state x="394" y="0" key="CommitChangelistDialog2" timestamp="1577425633250">
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577692898655" />
+    <state x="394" y="0" key="CommitChangelistDialog2" timestamp="1577690227606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="394" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577425633250" />
+    <state x="394" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577690227606" />
     <state width="471" height="466" key="DebuggerActiveHint" timestamp="1577675260176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -279,22 +279,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577432124140" />
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1577684606441">
+    <state width="1493" height="186" key="GridCell.Tab.0.bottom" timestamp="1577693605341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577684606441" />
-    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1577684606441">
+    <state width="1493" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577693605341" />
+    <state width="1493" height="186" key="GridCell.Tab.0.center" timestamp="1577693605341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577684606441" />
-    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1577684606441">
+    <state width="1493" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577693605341" />
+    <state width="1493" height="186" key="GridCell.Tab.0.left" timestamp="1577693605341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577684606441" />
-    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1577684606441">
+    <state width="1493" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577693605341" />
+    <state width="1493" height="186" key="GridCell.Tab.0.right" timestamp="1577693605341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577684606441" />
+    <state width="1493" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577693605341" />
     <state width="1493" height="191" key="GridCell.Tab.1.bottom" timestamp="1577684116289">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -323,10 +323,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="614" y="328" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1577169554160" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1577425652464">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1577690243639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577425652464" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577690243639" />
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1577672738299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -339,10 +339,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="307" key="git4idea.ui.GitResetDialog/0.0.1536.824@0.0.1536.824" timestamp="1577175896712" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1577439498191">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1577692002627">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1577439498191" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1577692002627" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
