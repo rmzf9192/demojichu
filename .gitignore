@@ -13,3 +13,5 @@ src/main/java/com/el/jichu/collection/map/
 src/main/java/com/el/jichu/designpattern/factorymethod/moreMethod/
 target/generated-sources/
 target/generated-test-sources/
+/.idea/
+/target/
