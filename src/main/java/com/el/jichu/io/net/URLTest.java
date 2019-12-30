@@ -19,7 +19,7 @@ public class URLTest {
         System.out.println(inputStream.read());
 
         while(true) {
-            URL url = new URL("https://dvajs.com/guide/getting-started.html#%E5%AE%89%E8%A3%85-dva-cli");
+            URL url = new URL("https://tw.elitesland.com/user/timesheet/detail");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
             System.out.println(connection.getResponseCode());

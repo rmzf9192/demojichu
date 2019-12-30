@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="35d2b08c-e9c7-4c71-ba09-b7dcc2df326c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/bio/BioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/GroupChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/GroupChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/MapperByteBufferTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NIOClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NIOServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NewIOClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NewIoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/net/URLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/net/URLTest.java" afterDir="false" />
+    </list>
+    <list id="902d2360-7453-4d55-b4c6-b260ec5c04f9" name="Revert &quot;测试&quot;" comment="Revert &quot;测试&quot;" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1VCV3E1Eifk3qqlZbkUURq2Wyqp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="F:/study/java学习/网络/尚硅谷Netty笔记源码资料等2个文件/尚硅谷Netty笔记源码资料/代码/NettyPro" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.NewIOClient">
+    <configuration name="GroupChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.nio.GroupChatClient" />
+      <module name="demojichu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.el.jichu.io.netty.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.nio.GroupChatServer" />
+      <module name="demojichu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.el.jichu.io.netty.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewIOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.nio.NewIOClient" />
+      <module name="demojichu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.el.jichu.io.netty.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewIoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.nio.NewIoServer" />
+      <module name="demojichu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.el.jichu.io.netty.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBlockingNio2.clientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demojichu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.el.jichu.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.el.jichu.nio" />
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.nio.TestBlockingNio2" />
+      <option name="METHOD_NAME" value="clientTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NewIOClient" />
+        <item itemvalue="Application.NewIoServer" />
+        <item itemvalue="Application.GroupChatClient" />
+        <item itemvalue="Application.GroupChatServer" />
+        <item itemvalue="JUnit.TestBlockingNio2.clientTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35d2b08c-e9c7-4c71-ba09-b7dcc2df326c" name="Default Changelist" comment="" />
+      <created>1576756862756</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576756862756</updated>
+      <workItem from="1576756864146" duration="802000" />
+      <workItem from="1576801554006" duration="1361000" />
+      <workItem from="1576806688862" duration="652000" />
+      <workItem from="1576811871172" duration="9776000" />
+      <workItem from="1577061378212" duration="13815000" />
+      <workItem from="1577085605608" duration="8549000" />
+      <workItem from="1577147434091" duration="15424000" />
+      <workItem from="1577173567373" duration="2155000" />
+      <workItem from="1577234206949" duration="22399000" />
+      <workItem from="1577320507168" duration="85000" />
+      <workItem from="1577320786205" duration="335000" />
+      <workItem from="1577321257243" duration="7678000" />
+      <workItem from="1577343517216" duration="8583000" />
+      <workItem from="1577365534537" duration="148000" />
+      <workItem from="1577406766595" duration="26764000" />
+      <workItem from="1577672738083" duration="8270000" />
+    </task>
+    <task id="LOCAL-00001" summary="测试">
+      <created>1576756972428</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576756972428</updated>
+    </task>
+    <task id="LOCAL-00002" summary="生成平衡二叉树-&gt;右旋bug修复">
+      <created>1577168997648</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577168997648</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改git用户名">
+      <created>1577169341651</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577169341651</updated>
+    </task>
+    <task id="LOCAL-00004" summary="测试">
+      <created>1577169386632</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577169386632</updated>
+    </task>
+    <task id="LOCAL-00005" summary="普利姆算法添加注释">
+      <created>1577242580652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577242580652</updated>
+    </task>
+    <task id="LOCAL-00006" summary="添加对应代码">
+      <created>1577324933459</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577324933459</updated>
+    </task>
+    <task id="LOCAL-00007" summary="添加网络编程方面的代码示例">
+      <created>1577425644530</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1577425644530</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="生成平衡二叉树-&gt;右旋bug修复" />
+    <MESSAGE value="修改git用户名" />
+    <MESSAGE value="测试" />
+    <MESSAGE value="普利姆算法添加注释" />
+    <MESSAGE value="添加对应代码" />
+    <MESSAGE value="添加网络编程方面的代码示例" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加网络编程方面的代码示例" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="505" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576757047622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="505" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1576757047622" />
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1577439076892">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577439076892" />
+    <state x="394" y="0" key="CommitChangelistDialog2" timestamp="1577425633250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="394" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577425633250" />
+    <state width="471" height="466" key="DebuggerActiveHint" timestamp="1577675260176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="471" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1577675260176" />
+    <state x="147" y="71" key="DiffContextDialog" timestamp="1577169535611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="71" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1577169535611" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1577432124140">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577432124140" />
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1577684606441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577684606441" />
+    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1577684606441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577684606441" />
+    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1577684606441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577684606441" />
+    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1577684606441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577684606441" />
+    <state width="1493" height="191" key="GridCell.Tab.1.bottom" timestamp="1577684116289">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="191" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577684116289" />
+    <state width="1493" height="191" key="GridCell.Tab.1.center" timestamp="1577684116289">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="191" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577684116289" />
+    <state width="1493" height="191" key="GridCell.Tab.1.left" timestamp="1577684116289">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="191" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577684116289" />
+    <state width="1493" height="191" key="GridCell.Tab.1.right" timestamp="1577684116289">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="191" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577684116289" />
+    <state x="561" y="123" key="RollbackChangesDialog" timestamp="1577265335202">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="561" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577265335202" />
+    <state x="270" y="55" key="SettingsEditor" timestamp="1577365681601">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577365681601" />
+    <state x="614" y="328" key="VCS.ChangelistChooser" timestamp="1577169554160">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="614" y="328" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1577169554160" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1577425652464">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577425652464" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1577672738299">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1577672738299" />
+    <state x="377" y="112" width="782" height="600" key="find.popup" timestamp="1577408617731">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="377" y="112" width="782" height="600" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1577408617731" />
+    <state x="578" y="307" key="git4idea.ui.GitResetDialog" timestamp="1577175896712">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="307" key="git4idea.ui.GitResetDialog/0.0.1536.824@0.0.1536.824" timestamp="1577175896712" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1577439498191">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1577439498191" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/sort/HeapSort.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/binarysorttree/BinarySortTreeDemo.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/binarysorttree/BinarySortTreeDemo.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/algorithm/dynamic/KnapsackProblem.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/io/net/TCPSendTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/io/net/URLTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/el/jichu/nio/TestBlockingNio2.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/GroupChatClient.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NewIoServer.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
