@@ -19,7 +19,7 @@ public class MyTextWebSocketFrameHandler extends SimpleChannelInboundHandler<Tex
         System.out.println("服务端收到信息"+msg.text());
 
         //回复信息
-        ctx.channel().writeAndFlush(new TextWebSocketFrame("服务器时间"+ LocalDateTime.now() + "  "+ msg.text()));
+        ctx.channel().writeAndFlush(new TextWebSocketFrame("服务器时间："+ LocalDateTime.now() + "  "+ msg.text()));
     }
 
     @Override
