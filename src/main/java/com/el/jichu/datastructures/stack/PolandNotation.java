@@ -109,6 +109,7 @@ public class PolandNotation {
         return list;
     }
 
+    //将中缀表达式转为list
     private static List<String> toInfixExpressionList(String s) {
         List<String> listStr = new ArrayList<>();
 
