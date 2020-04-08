@@ -67,7 +67,7 @@ class ThreadedBinaryTree{
         // 定义一个变量存储当前变量的节点,从root开始
         HeroNode node = root;
 
-        while(null != root){
+        while(null != node){
             /*
             循环遍历查找，当leftValue == 1时，第一个节点就是8
             后面随着循环遍历而遍历，因为当leftValue == 1时，说明是按照线索化查找
