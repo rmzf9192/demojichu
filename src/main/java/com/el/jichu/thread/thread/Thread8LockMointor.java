@@ -19,9 +19,9 @@ public class Thread8LockMointor {
             number1.getTwo();
         }).start();
 
-      /*  new Thread(()->{
+        new Thread(()->{
             number.getThree();
-        }).start();*/
+        }).start();
     }
 }
 

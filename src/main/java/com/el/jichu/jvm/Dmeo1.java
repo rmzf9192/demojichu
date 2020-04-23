@@ -13,6 +13,8 @@ public class Dmeo1 {
         System.out.println(dmeo1.getClass().getClassLoader().getParent().getParent());
         System.out.println(dmeo1.getClass().getClassLoader().getParent());
         System.out.println(dmeo1.getClass().getClassLoader());
+
+
         val list = new ArrayList<String>();
         list.add("jhhh");
         for (val l : list) {

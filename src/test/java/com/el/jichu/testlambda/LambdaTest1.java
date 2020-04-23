@@ -39,7 +39,7 @@ public class LambdaTest1 {
                 return i;
             }
         });
-        System.out.println(treeSet1.comparator().compare("sss", "dfa"));
+        System.out.println(treeSet1.comparator().compare("ssss", "dfa"));
     }
 
     //现在的lambda语法
@@ -58,12 +58,12 @@ public class LambdaTest1 {
             new Employee(105, "田七", 38, 5555.55)
     );
 
-    //需求获取年龄小于35岁的员工
+    //需求:获取年龄大于30岁的员工
     public List<Employee> getEmpsByAge(List<Employee> list) {
         List<Employee> empList = new ArrayList<>();
 
         for (Employee employee : list) {
-            if (employee.getAge() > 35) {
+            if (employee.getAge() > 30) {
                 empList.add(employee);
             }
         }
@@ -75,15 +75,6 @@ public class LambdaTest1 {
         List<Employee> empsByAge = this.getEmpsByAge(emps);
         for (Employee e : empsByAge) {
             System.out.println(e);
-        }
-        int[] arr = new int[3];
-        int i = 0;
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 3;
-        int searchKey = 3;
-        for (System.out.println("A"); i < arr.length; i++) {
-            System.out.println("B");
         }
     }
 
@@ -143,7 +134,7 @@ public class LambdaTest1 {
         List<Employee> lists = filterEmployee(emps, new MyPredicate<Employee>() {
             @Override
             public boolean test(Employee employee) {
-                return employee.getSalary() < 5000;
+                return employee.getSalary() > 5000;
             }
         });
         for (Employee employee : lists) {
@@ -155,11 +146,11 @@ public class LambdaTest1 {
     @Test
     public void test7() {
         //lambda：方法引用
-        List<Employee> lists = filterEmployee(emps, (e) -> e.getAge() > 35);
+        List<Employee> lists = filterEmployee(emps, (e) -> e.getAge() > 30);
         lists.forEach(System.out::println);
         System.out.println("-------------------------------");
         //lambda:正常形式
-        List<Employee> list = filterEmployee(emps, (employee -> employee.getAge() > 35));
+        List<Employee> list = filterEmployee(emps, (employee -> employee.getAge() > 30));
         list.forEach((e) -> System.out.println(e));
     }
 

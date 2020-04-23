@@ -106,7 +106,7 @@ class HashTable{
             System.out.println("在哈希表中，没有找到该雇员~");
         }
     }
-    //编写散列函数, 使用一个简单取模法
+    //编写散列函数, 使用一个简单取模法 
     public int hashFun(int id) {
         return id % size;
     }

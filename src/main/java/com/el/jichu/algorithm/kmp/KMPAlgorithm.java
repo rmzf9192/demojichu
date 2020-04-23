@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @Version:V1.0
  * @Description:KMPAlgorithm
  */
-public class KMPAlgorithm {
+public class  KMPAlgorithm {
     public static void main(String[] args) {
         String str1 = "BBC ABCDAB ABCDABCDABDE";
         String str2 = "ABCDABD";

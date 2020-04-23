@@ -16,7 +16,7 @@ public class TestForkJoin {
         ForkJoinPool pool = new ForkJoinPool();
         ForkJoinTask<Long> task = new ForkJoinCalculate(0L, 10000000000L);
 
-        Long sum = pool.invoke(task);
+        long sum = pool.invoke(task);
         System.out.println(sum);
 
         long end = System.currentTimeMillis();

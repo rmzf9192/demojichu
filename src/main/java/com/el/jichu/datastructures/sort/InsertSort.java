@@ -14,10 +14,10 @@ public class InsertSort {
     public static void main(String[] args) {
 //        int[] arr = {101, 34, 119, 1, -1, 89,-3};
 
-        int[] arr = new int[8000000];
+        int[] arr = new int[80000];
 
-        for (int i = 0; i < 8000000; i++) {
-            arr[i] = (int) (Math.random()*800000);
+        for (int i = 0; i < 80000; i++) {
+            arr[i] = (int) (Math.random()*80000);
         }
         LocalTime start = LocalDateTime.now().toLocalTime();
         System.out.println("排序前的时间："+start);

@@ -2,24 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35d2b08c-e9c7-4c71-ba09-b7dcc2df326c" name="Default Changelist" comment="Netty 入门- 简单服务端与客户端实例">
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/protocoltcp/MessageProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/protocoltcp/MyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/protocoltcp/MyClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/protocoltcp/MyClientInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/protocoltcp/MyMessageDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/protocoltcp/MyMessageEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/protocoltcp/MyServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/protocoltcp/MyServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/protocoltcp/MyServerInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/tcp/MyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/tcp/MyClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/tcp/MyClientInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/tcp/MyServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/tcp/MyServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/netty/tcp/MyServerInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/imutable/ImmutableClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/imutable/TestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/jvm/ClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/jvm/G1Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/jvm/HeapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/jvm/LoderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/jvm/MyClassLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/algorithm/kmp/KMPAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/algorithm/kmp/KMPAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/daoImpl/FilterEmployeeForAge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/daoImpl/FilterEmployeeForAge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/HashTabDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/HashTabDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/sort/InsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/sort/InsertSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/jvm/Dmeo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/jvm/Dmeo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/jvm/JVMDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/jvm/JVMDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/test/ForkJoinCalculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/test/ForkJoinCalculate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/test/MyFun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/test/MyFun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/test/MyInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/test/MyInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/el/jichu/thread/thread/Thread8LockMointor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/el/jichu/thread/thread/Thread8LockMointor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/LambdaTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/LambdaTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/LambdaTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/LambdaTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/LambdaTestRef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/LambdaTestRef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/StreamApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/StreamApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/TestForkJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/TestForkJoin.java" afterDir="false" />
     </list>
     <list id="902d2360-7453-4d55-b4c6-b260ec5c04f9" name="Revert &quot;测试&quot;" comment="Revert &quot;测试&quot;" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +44,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -46,6 +54,12 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -66,11 +80,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.webservices" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -87,13 +101,13 @@
       <recent name="E:\study\java-基础阶段\demojichu\src\main\java\com\el\jichu\io\netty\WebSocket" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyClient (1)">
-    <configuration name="MyClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.netty.protocoltcp.MyClient" />
+  <component name="RunManager" selected="Application.CallableDemo">
+    <configuration name="CallableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.thread.threadpool.CallableDemo" />
       <module name="demojichu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.el.jichu.io.netty.netty.protocoltcp.*" />
+          <option name="PATTERN" value="com.el.jichu.thread.threadpool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.netty.tcp.MyClient" />
+    <configuration name="G1Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.jvm.G1Demo" />
       <module name="demojichu" />
+      <option name="VM_PARAMETERS" value="-Xms10m -Xmx10m -XX:+PrintGCDetails -XX:+UseG1GC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.el.jichu.io.netty.netty.tcp.*" />
+          <option name="PATTERN" value="com.el.jichu.jvm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.WebSocket.MyServer" />
+    <configuration name="MyThreadLocal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.thread.threadlocal.MyThreadLocal" />
       <module name="demojichu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.el.jichu.io.netty.WebSocket.*" />
+          <option name="PATTERN" value="com.el.jichu.thread.threadlocal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyServer (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.netty.tcp.MyServer" />
+    <configuration name="TestThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.thread.threadpool.TestThreadPool" />
       <module name="demojichu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.el.jichu.io.netty.netty.tcp.*" />
+          <option name="PATTERN" value="com.el.jichu.thread.threadpool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyServer (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.el.jichu.io.netty.netty.protocoltcp.MyServer" />
+    <configuration name="Thread8LockMointor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.el.jichu.thread.thread.Thread8LockMointor" />
       <module name="demojichu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.el.jichu.io.netty.netty.protocoltcp.*" />
+          <option name="PATTERN" value="com.el.jichu.thread.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,13 +168,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.G1Demo" />
+      <item itemvalue="Application.Thread8LockMointor" />
+      <item itemvalue="Application.MyThreadLocal" />
+      <item itemvalue="Application.TestThreadPool" />
+      <item itemvalue="Application.CallableDemo" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyClient (1)" />
-        <item itemvalue="Application.MyServer (3)" />
-        <item itemvalue="Application.MyClient" />
-        <item itemvalue="Application.MyServer (2)" />
-        <item itemvalue="Application.MyServer (1)" />
+        <item itemvalue="Application.CallableDemo" />
+        <item itemvalue="Application.TestThreadPool" />
+        <item itemvalue="Application.MyThreadLocal" />
+        <item itemvalue="Application.Thread8LockMointor" />
+        <item itemvalue="Application.G1Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +196,9 @@
         </serviceView>
       </list>
     </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER,ALPHA_COMPARATOR" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -204,6 +229,39 @@
       <workItem from="1577752702885" duration="828000" />
       <workItem from="1577760715996" duration="9461000" />
       <workItem from="1577777228233" duration="6099000" />
+      <workItem from="1584453885996" duration="1226000" />
+      <workItem from="1584535302241" duration="1904000" />
+      <workItem from="1584584152216" duration="11029000" />
+      <workItem from="1584672429625" duration="5820000" />
+      <workItem from="1584844810119" duration="6400000" />
+      <workItem from="1584965489833" duration="3367000" />
+      <workItem from="1585013988511" duration="3197000" />
+      <workItem from="1585102546949" duration="11929000" />
+      <workItem from="1585216672909" duration="17178000" />
+      <workItem from="1585355827145" duration="7851000" />
+      <workItem from="1585456545457" duration="1772000" />
+      <workItem from="1585472685513" duration="184000" />
+      <workItem from="1585472890574" duration="1550000" />
+      <workItem from="1585483048089" duration="666000" />
+      <workItem from="1585555970932" duration="8392000" />
+      <workItem from="1585626315701" duration="3187000" />
+      <workItem from="1585705419960" duration="2731000" />
+      <workItem from="1585795393296" duration="1279000" />
+      <workItem from="1585879389645" duration="5072000" />
+      <workItem from="1586225219060" duration="1783000" />
+      <workItem from="1586231124942" duration="4055000" />
+      <workItem from="1586311056340" duration="8290000" />
+      <workItem from="1586420765380" duration="4029000" />
+      <workItem from="1586483361730" duration="1220000" />
+      <workItem from="1586750189619" duration="2268000" />
+      <workItem from="1586767739102" duration="329000" />
+      <workItem from="1586768160193" duration="5155000" />
+      <workItem from="1586836501862" duration="7761000" />
+      <workItem from="1586915334726" duration="5330000" />
+      <workItem from="1587096809953" duration="4754000" />
+      <workItem from="1587178703647" duration="2808000" />
+      <workItem from="1587433899020" duration="6294000" />
+      <workItem from="1587520371121" duration="6444000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1576756972428</created>
@@ -310,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577780734628</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="线索化二叉树 - bug修复">
+      <created>1586313199325</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586313199325</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,109 +408,86 @@
     <MESSAGE value="Netty 入门- WebSocket案例，调整回复信息" />
     <MESSAGE value="Netty 入门- proto序列化" />
     <MESSAGE value="Netty 入门- 编码解码" />
-    <option name="LAST_COMMIT_MESSAGE" value="Netty 入门- 编码解码" />
+    <MESSAGE value="线索化二叉树 - bug修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="线索化二叉树 - bug修复" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577772240818">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587179111158">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577772240818" />
-    <state x="505" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577777144935">
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1587179111158" />
+    <state x="550" y="9" key="CommitChangelistDialog2" timestamp="1586313196623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="505" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1577777144935" />
-    <state x="866" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1577782907791">
+    <state x="550" y="9" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586313196623" />
+    <state width="414" height="466" key="DebuggerActiveHint" timestamp="1586785397775">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="866" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577782907791" />
-    <state x="449" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577752798010">
+    <state width="414" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1586785397775" />
+    <state x="147" y="71" width="1228" height="687" key="DiffContextDialog" timestamp="1585473253545">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1577752798010" />
-    <state x="302" y="10" key="CommitChangelistDialog2" timestamp="1577780729611">
+    <state x="147" y="71" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1585473253545" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1584535440633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="302" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577780729611" />
-    <state width="471" height="466" key="DebuggerActiveHint" timestamp="1577675260176">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584535440633" />
+    <state width="1493" height="58" key="GridCell.Tab.0.bottom" timestamp="1587611517734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="471" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1577675260176" />
-    <state x="147" y="71" key="DiffContextDialog" timestamp="1577169535611">
+    <state width="1493" height="58" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587611517734" />
+    <state width="1493" height="58" key="GridCell.Tab.0.center" timestamp="1587611517734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="71" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1577169535611" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1577432124140">
+    <state width="1493" height="58" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587611517734" />
+    <state width="1493" height="58" key="GridCell.Tab.0.left" timestamp="1587611517734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577432124140" />
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom" timestamp="1577783504037">
+    <state width="1493" height="58" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587611517734" />
+    <state width="1493" height="58" key="GridCell.Tab.0.right" timestamp="1587611517734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577783504037" />
-    <state width="1493" height="180" key="GridCell.Tab.0.center" timestamp="1577783504037">
+    <state width="1493" height="58" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587611517734" />
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom" timestamp="1586785618491">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577783504037" />
-    <state width="1493" height="180" key="GridCell.Tab.0.left" timestamp="1577783504037">
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586785618491" />
+    <state width="1493" height="257" key="GridCell.Tab.1.center" timestamp="1586785618490">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577783504037" />
-    <state width="1493" height="180" key="GridCell.Tab.0.right" timestamp="1577783504037">
+    <state width="1493" height="257" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586785618490" />
+    <state width="1493" height="257" key="GridCell.Tab.1.left" timestamp="1586785618490">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577783504037" />
-    <state width="1493" height="191" key="GridCell.Tab.1.bottom" timestamp="1577708776963">
+    <state width="1493" height="257" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586785618490" />
+    <state width="1493" height="257" key="GridCell.Tab.1.right" timestamp="1586785618491">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577708776963" />
-    <state width="1493" height="191" key="GridCell.Tab.1.center" timestamp="1577708776963">
+    <state width="1493" height="257" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586785618491" />
+    <state x="567" y="123" key="RollbackChangesDialog" timestamp="1586424136506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577708776963" />
-    <state width="1493" height="191" key="GridCell.Tab.1.left" timestamp="1577708776963">
+    <state x="567" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586424136506" />
+    <state x="327" y="109" key="SettingsEditor" timestamp="1586229040908">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577708776963" />
-    <state width="1493" height="191" key="GridCell.Tab.1.right" timestamp="1577708776963">
+    <state x="327" y="109" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586229040908" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586313326255">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577708776963" />
-    <state x="561" y="123" key="RollbackChangesDialog" timestamp="1577265335202">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586313326255" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1587520373030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="561" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577265335202" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1577780812162">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587520373030" />
+    <state x="178" y="107" key="new project wizard" timestamp="1586421349838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577780812162" />
-    <state x="614" y="328" key="VCS.ChangelistChooser" timestamp="1577169554160">
+    <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586421349838" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1587179426173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="614" y="328" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1577169554160" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1577780742828">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577780742828" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1577777228520">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1577777228520" />
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577771329016">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1577771329016" />
-    <state x="377" y="112" width="782" height="600" key="find.popup" timestamp="1577697007792">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="377" y="112" width="782" height="600" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1577697007792" />
-    <state x="578" y="307" key="git4idea.ui.GitResetDialog" timestamp="1577175896712">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="578" y="307" key="git4idea.ui.GitResetDialog/0.0.1536.824@0.0.1536.824" timestamp="1577175896712" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1577757561130">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1577757561130" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1587179426173" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -459,11 +501,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/binarysorttree/BinarySortTreeDemo.java</url>
           <line>103</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/binarysorttree/BinarySortTreeDemo.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/algorithm/dynamic/KnapsackProblem.java</url>
@@ -494,6 +531,31 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/io/netty/nio/NewIoServer.java</url>
           <line>22</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/queue/CircleArray.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/sort/QuickSort.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/binarysorttree/BinarySortTreeDemo.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/el/jichu/datastructures/tree/threadedBinaryTree/ThreadedBinaryTreeDemo.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/el/jichu/testlambda/LambdaTestRef.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

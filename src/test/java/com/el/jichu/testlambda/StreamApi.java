@@ -16,11 +16,11 @@ public class StreamApi {
         List<String> list = new ArrayList<>();
         //获取一个顺序流
         Stream<String> stream = list.stream();
-        //获取一个并行流
+        //获取一个并行流,并行与并发的区别
         Stream<String> stringStream = list.parallelStream();
         System.out.println(stream.map((e) -> Integer.parseInt(e)));
 
-        //通过Arrays中的Stream获取一个数组流
+        //2.通过Arrays中的Stream获取一个数组流
         Integer[] integerArr = new Integer[2];
         List<Integer> list1 = new ArrayList<>(Arrays.asList(integerArr));
         list1.add(12);
@@ -31,17 +31,18 @@ public class StreamApi {
         Stream<Integer> stream1 = Arrays.stream(in);
         stream1.forEach(System.out::println);
 
-        //通过Stream中的静态方法of获取
+        //3.通过Stream中的静态方法of获取
         Stream<Integer> integerStream = Stream.of(1, 2, 3, 4, 5, 6);
         List<Integer> collect = integerStream.collect(Collectors.toList());
 
 
         integerStream.forEach(System.out::println);
         //4.创建无限流
+         //迭代
         Stream<Integer> limit = Stream.iterate(0, (x) -> x + 2).limit(3);
         limit.forEach(System.out::println);
         System.out.println("---------------------------");
-        //生成
+         //生成
         Stream<Double> limit1 = Stream.generate(Math::random).limit(3);
         limit1.forEach(System.out::println);
     }
