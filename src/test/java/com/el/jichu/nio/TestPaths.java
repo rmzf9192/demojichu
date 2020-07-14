@@ -2,6 +2,7 @@ package com.el.jichu.nio;
 
 import org.junit.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -9,6 +10,9 @@ import java.nio.channels.SeekableByteChannel;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.DosFileAttributeView;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Auther: roman.zhang
@@ -48,6 +52,28 @@ public class TestPaths {
         for (Path path : newDirectoryStream) {
             System.out.println(path);
         }
+    }
+
+    /**
+     *
+     * @throws IOException
+     */
+    @Test
+    public void testPath() throws IOException {
+        String s = "good good study day day up";
+        String result = s.replace(" ","");
+        System.out.println(result);
+        String str ="{\"job\":{\"setting\":{\"speed\":{\"channel\":3},\"errorLimit\":{\"record\":0,\"percentage\":0.02}},\"content\":[{\"reader\":{\"name\":\"mysqlreader\",\"parameter\":{\"username\":\"cms\",\"password\":\"123456\",\"column\":[\"*\"],\"splitPk\":\"id\",\"connection\":[{\"table\":[\"oat_user\"],\"jdbcUrl\":[\"jdbc:mysql://db.elitescloud.com:25005/nsp?zeroDateTimeBehavior=CONVERT_TO_NULL\"]}]}},\"writer\":{\"name\":\"mysqlwriter\",\"parameter\":{\"writeMode\":\"insert\",\"username\":\"root\",\"password\":\"123456\",\"column\":[\"*\"],\"session\":[\"set session sql_mode='ANSI'\"],\"preSql\":[";
+        System.out.println(str.length());
+        //判断路径是否存在
+        boolean exists = Files.isDirectory(Paths.get("D:\\elworkspace\\doc"));
+        if(!exists){
+            //创建路径
+            Path directories = Files.createDirectories(Paths.get("D:\\elworkspace\\doc"));
+        }
+        //获取路径下的所有文件
+        File file = new File("D:\\elworkspace\\doc");
+        List<String> strings = Arrays.asList(file.list());
     }
 
     /*

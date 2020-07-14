@@ -1,5 +1,7 @@
 package com.el.jichu.designpattern.strategy.test;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author Roman.zhang
  * @Date: 2019/7/9 10:08
@@ -7,7 +9,7 @@ package com.el.jichu.designpattern.strategy.test;
  * @Description:Client
  */
 public class Client {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WildDuck wildDuck = new WildDuck();
         wildDuck.fly();
 
@@ -20,5 +22,6 @@ public class Client {
         pekingDuck.setFlyBehavior(new NoFlyBehavior());
         System.out.println("北京鸭的实际飞翔能力");
         pekingDuck.fly();
+        TimeUnit.SECONDS.sleep(1000);
     }
 }

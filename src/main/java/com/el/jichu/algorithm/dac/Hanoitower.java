@@ -9,7 +9,7 @@ package com.el.jichu.algorithm.dac;
 public class Hanoitower {
     public static void main(String[] args) {
 
-        hanoiTower(5, 'A', 'B', 'C');
+        hanoiTower(64, 'A', 'B', 'C');
 
     }
 

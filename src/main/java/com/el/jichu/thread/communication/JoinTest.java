@@ -6,7 +6,6 @@ import java.io.PipedReader;
 import java.io.PipedWriter;
 import java.util.concurrent.*;
 
-import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 
 public class JoinTest {
 
@@ -33,7 +32,6 @@ public class JoinTest {
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info("running1");
                 try {
                     Thread.sleep(3000);
                 } catch (InterruptedException e) {
@@ -44,7 +42,6 @@ public class JoinTest {
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info("running2");
                 try {
                     Thread.sleep(3000);
                 } catch (InterruptedException e) {
@@ -61,7 +58,6 @@ public class JoinTest {
         //等待线程2终止
         t2.join();
         System.out.println(Thread.currentThread().getName() + ":获取当前子线程状态：" + Thread.currentThread().getState());
-        LOGGER.info("main over");
 
     }
 
@@ -74,7 +70,6 @@ public class JoinTest {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    LOGGER.info("线程正在runing");
                     try {
                         Thread.sleep(3000);
                         countDownLatch.countDown();
@@ -89,7 +84,6 @@ public class JoinTest {
         long end = System.currentTimeMillis();
 
 
-        LOGGER.info("main over total time={}：" + (end - start));
     }
 
     private static void cyclicBarrier() {
@@ -98,7 +92,6 @@ public class JoinTest {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName() + "Thread Runing");
                 try {
                     cyclicBarrier.await();
                 } catch (InterruptedException e) {
@@ -106,14 +99,12 @@ public class JoinTest {
                 } catch (BrokenBarrierException e) {
                     e.printStackTrace();
                 }
-                LOGGER.info("Thread end do something");
             }
         }).start();
 
         new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName() + "Thread Running");
                 try {
                     cyclicBarrier.await();
                 } catch (InterruptedException e) {
@@ -121,14 +112,12 @@ public class JoinTest {
                 } catch (BrokenBarrierException e) {
                     e.printStackTrace();
                 }
-                LOGGER.info("Thread end do something");
             }
         }).start();
 
         new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName() + "Thread Running");
                 try {
                     cyclicBarrier.await();
                 } catch (InterruptedException e) {
@@ -136,11 +125,9 @@ public class JoinTest {
                 } catch (BrokenBarrierException e) {
                     e.printStackTrace();
                 }
-                LOGGER.info("Thread end do something");
             }
         }).start();
 
-        LOGGER.info("main thread");
 
     }
 
@@ -171,7 +158,6 @@ public class JoinTest {
         poolExecutor.execute(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName() + "-runing");
                 try {
                     Thread.sleep(3000);
                 } catch (InterruptedException e) {
@@ -183,7 +169,6 @@ public class JoinTest {
         poolExecutor.execute(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName() + "-runing");
 
                 try {
                     Thread.sleep(2000);
@@ -194,10 +179,8 @@ public class JoinTest {
         });
         poolExecutor.shutdown();
         while (!poolExecutor.awaitTermination(1, TimeUnit.SECONDS)) {
-            LOGGER.info("线程还在执行");
         }
 
-        LOGGER.info("main over");
 
     }
 
@@ -216,7 +199,6 @@ public class JoinTest {
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName() + "-runing");
                 try {
                     for (int i = 0; i < 10; i++) {
                         pipedWriter.write(i + "");
@@ -238,12 +220,10 @@ public class JoinTest {
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                LOGGER.info(Thread.currentThread().getName() + "-runing");
 
                 int msg = 0;
                 try {
                     while ((msg = pipedReader.read()) != -1) {
-                        LOGGER.info(Thread.currentThread().getName() + "-msg{}=" + (char) msg);
                     }
                 } catch (Exception e) {
 

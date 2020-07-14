@@ -22,7 +22,7 @@ public class ShellSort {
         }
         LocalTime start = LocalDateTime.now().toLocalTime();
         System.out.println("排序前的时间："+start);
-        shellSort2(arr);
+        shellSort(arr);
         LocalTime end = LocalDateTime.now().toLocalTime();
         System.out.println("排序后的时间："+end);
     }

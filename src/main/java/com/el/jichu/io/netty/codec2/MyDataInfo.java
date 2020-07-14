@@ -618,7 +618,7 @@ public final class MyDataInfo {
                 MyMessage.class, Builder.class);
       }
 
-      // Construct using com.atguigu.netty.codec2.MyDataInfo.MyMessage.newBuilder()
+      // Construct using com.el.jichu.netty.netty.codec2.MyDataInfo.MyMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -836,7 +836,7 @@ public final class MyDataInfo {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         dataType_ = value.getNumber();
         onChanged();
         return this;
@@ -849,7 +849,7 @@ public final class MyDataInfo {
        * <code>.MyMessage.DataType data_type = 1;</code>
        */
       public Builder clearDataType() {
-        
+
         dataType_ = 0;
         onChanged();
         return this;
@@ -1318,7 +1318,7 @@ public final class MyDataInfo {
       if (ref instanceof String) {
         return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         name_ = s;
@@ -1335,7 +1335,7 @@ public final class MyDataInfo {
         getNameBytes() {
       Object ref = name_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (String) ref);
         name_ = b;
@@ -1531,7 +1531,7 @@ public final class MyDataInfo {
                 Student.class, Builder.class);
       }
 
-      // Construct using com.atguigu.netty.codec2.MyDataInfo.Student.newBuilder()
+      // Construct using com.el.jichu.netty.netty.codec2.MyDataInfo.Student.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1684,7 +1684,7 @@ public final class MyDataInfo {
        * <code>int32 id = 1;</code>
        */
       public Builder setId(int value) {
-        
+
         id_ = value;
         onChanged();
         return this;
@@ -1697,7 +1697,7 @@ public final class MyDataInfo {
        * <code>int32 id = 1;</code>
        */
       public Builder clearId() {
-        
+
         id_ = 0;
         onChanged();
         return this;
@@ -1732,7 +1732,7 @@ public final class MyDataInfo {
           getNameBytes() {
         Object ref = name_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (String) ref);
           name_ = b;
@@ -1752,7 +1752,7 @@ public final class MyDataInfo {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         name_ = value;
         onChanged();
         return this;
@@ -1764,7 +1764,7 @@ public final class MyDataInfo {
        * <code>string name = 2;</code>
        */
       public Builder clearName() {
-        
+
         name_ = getDefaultInstance().getName();
         onChanged();
         return this;
@@ -1781,7 +1781,7 @@ public final class MyDataInfo {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         name_ = value;
         onChanged();
         return this;
@@ -1952,7 +1952,7 @@ public final class MyDataInfo {
       if (ref instanceof String) {
         return (String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         name_ = s;
@@ -1966,7 +1966,7 @@ public final class MyDataInfo {
         getNameBytes() {
       Object ref = name_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (String) ref);
         name_ = b;
@@ -2171,7 +2171,7 @@ public final class MyDataInfo {
                 Worker.class, Builder.class);
       }
 
-      // Construct using com.atguigu.netty.codec2.MyDataInfo.Worker.newBuilder()
+      // Construct using com.el.jichu.netty.netty.codec2.MyDataInfo.Worker.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2328,7 +2328,7 @@ public final class MyDataInfo {
           getNameBytes() {
         Object ref = name_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (String) ref);
           name_ = b;
@@ -2345,7 +2345,7 @@ public final class MyDataInfo {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         name_ = value;
         onChanged();
         return this;
@@ -2354,7 +2354,7 @@ public final class MyDataInfo {
        * <code>string name = 1;</code>
        */
       public Builder clearName() {
-        
+
         name_ = getDefaultInstance().getName();
         onChanged();
         return this;
@@ -2368,7 +2368,7 @@ public final class MyDataInfo {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         name_ = value;
         onChanged();
         return this;
@@ -2385,7 +2385,7 @@ public final class MyDataInfo {
        * <code>int32 age = 2;</code>
        */
       public Builder setAge(int value) {
-        
+
         age_ = value;
         onChanged();
         return this;
@@ -2394,7 +2394,7 @@ public final class MyDataInfo {
        * <code>int32 age = 2;</code>
        */
       public Builder clearAge() {
-        
+
         age_ = 0;
         onChanged();
         return this;
@@ -2454,17 +2454,17 @@ public final class MyDataInfo {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MyMessage_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_MyMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Student_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Student_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Worker_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Worker_fieldAccessorTable;
 
@@ -2482,7 +2482,7 @@ public final class MyDataInfo {
       "kerH\000\"+\n\010DataType\022\017\n\013StudentType\020\000\022\016\n\nWo" +
       "rkerType\020\001B\n\n\010dataBody\"#\n\007Student\022\n\n\002id\030" +
       "\001 \001(\005\022\014\n\004name\030\002 \001(\t\"#\n\006Worker\022\014\n\004name\030\001 " +
-      "\001(\t\022\013\n\003age\030\002 \001(\005B(\n\030com.atguigu.netty.co" +
+      "\001(\t\022\013\n\003age\030\002 \001(\005B(\n\030com.el.jichu.netty.netty.co" +
       "dec2B\nMyDataInfoH\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

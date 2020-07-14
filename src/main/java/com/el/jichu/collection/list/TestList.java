@@ -1,6 +1,5 @@
 package com.el.jichu.collection.list;
 
-import sun.applet.resources.MsgAppletViewer;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

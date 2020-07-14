@@ -1,9 +1,12 @@
 package com.el.jichu.java8Test;
 
+import org.apache.commons.io.IOUtils;
 import org.junit.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.time.LocalDateTime;
 
 /**
  * Created by songhongkang on 2017/12/29 0029.
@@ -13,6 +16,12 @@ public class TryTest {
     //举例1：
     @Test
     public void testTry1() {
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(now);
+        char dirSeparator = IOUtils.DIR_SEPARATOR;
+        String path ="/usr/ftptest/test/";
+        char c = path.charAt(path.length() - 1);
+
 
         InputStreamReader reader = null;
 

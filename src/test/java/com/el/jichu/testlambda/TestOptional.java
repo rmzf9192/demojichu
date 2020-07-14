@@ -44,11 +44,15 @@ public class TestOptional {
         System.out.println(emp);
 
         Employee emp2 = op.orElseGet(() -> new Employee());
-        System.out.println(emp2);
+        System.out.println(emp2.getStatus());
     }
 
     @Test
     public void test2() {
+        String java = new String("java");
+        String java1 = new String("java");
+
+        System.out.println(java == java1);
         String str = null;
         Integer integer = Optional.ofNullable(str).map(String::length).orElse(0);
 
